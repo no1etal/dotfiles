@@ -9,6 +9,11 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+# Wallpaper
+exec --no-startup-id feh --no-fehbg --bg-fill ~/.config/i3/feh/home/kopachke/dotfiles/i3/feh/Abstract-star-wars-minimalist-wallpaper-scene.jpg
+# Blurred lock screen
+set $i3lockwall sh ~/.config/i3/scripts/lock.sh
+
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -160,7 +165,6 @@ workspace_auto_back_and_forth yes
 #Let’s now add a keystroke to lock our system:
 bindsym $mod+CTRL+Shift+l exec --no-startup-id $i3lockwall
 
-set $i3lockwall sh ~/.config/i3/scripts/lock.sh
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -239,7 +243,7 @@ bar {
 
 
 # Wallpaper
-exec --no-startup-id feh --no-fehbg --bg-fill \ ~/.config/i3/feh/Abstract-star-wars-minimalist-wallpaper-scene
+exec --no-startup-id feh --no-fehbg --bg-fill /home/kopachke/.config/i3/feh/Abstract-star-wars-minimalist-wallpaper-scene.jpg
 
 # floating pop up automatically
 for_window [window_role="pop-up"] floating enable
@@ -303,21 +307,19 @@ client.placeholder 	#000000 #0c0c0c $white2 #000000 #0c0c0c
 
 for_window [class="URxvt*"] border pixel 1
 
-# Terminal scratchpad with tmux and three windows: 1. Terminal | 2.Neovim temp file
+# Terminal scratchpad
 for_window [instance="urxvt_scratchpad"] move to scratchpad, border none
 bindsym $mod+Shift+t [instance="urxvt_scratchpad"] scratchpad show
-exec urxvtc -name urxvt_scratchpad \
--e tmux -2 new-session -d -s scratchpad \; \
-new-window -n nvim 'nvim +e /tmp/nvim-tmp.md' \; \
-attach-session -d -t scratchpad
+exec urxvtc -name urxvt_scratchpad
 
 # htop scratchpad
 for_window [instance="htop_scratchpad"] move to scratchpad, border none
 bindsym $mod+Shift+p [instance="htop_scratchpad"] scratchpad show
 exec urxvtc -name htop_scratchpad -e htop
 
+
 # Configure 5px of space between windows and to the screen edges.
-gaps inner 15px
+gaps inner 30px
 
 # Configure an additional 5px of extra space to the screen edges,
 # for a total gap of 10px to the screen edges, and 5px between windows.
@@ -349,9 +351,10 @@ smart_borders on
 #smart_borders no_gaps
 
 
-# Move to the next workspace
+##############    Move to the next workspace  #####################
 bindsym $mod+Ctrl+Right workspace next
 
 # Move to the previous workspace
 bindsym $mod+Ctrl+Left workspace prev
 
+###################################################################
