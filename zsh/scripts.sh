@@ -22,3 +22,7 @@ elif [[ -n "$ID" ]]; then
 tmuxp load "$ID"
 fi
 }
+
+scratchpad() {
+"$DOTFILES/zsh/scratchpad.sh"
+}
