@@ -2,6 +2,8 @@ source "$XDG_CONFIG_HOME/zsh/aliases"
 
 autoload -U compinit; compinit
 
+export OPENAI_API_KEY="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"
+
 # Autocomplete hidden files
 _comp_options+=(globdots)
 source ~/dotfiles/zsh/external/completion.zsh
