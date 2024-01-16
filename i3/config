@@ -9,8 +9,10 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+source "$XDG_CONFIG_HOME/zsh/aliases"
+
 # Wallpaper
-exec --no-startup-id feh --no-fehbg --bg-fill ~/.config/i3/feh/home/kopachke/dotfiles/i3/feh/Abstract-star-wars-minimalist-wallpaper-scene.jpg
+# exec --no-startup-id feh --no-fehbg --bg-fill ~/.config/i3/feh/home/kopachke/dotfiles/i3/feh/Abstract-star-wars-minimalist-wallpaper-scene.jpg
 # Blurred lock screen
 set $i3lockwall sh ~/.config/i3/scripts/lock.sh
 # Keybind for blurred lock screen
