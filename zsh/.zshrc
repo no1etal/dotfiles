@@ -1,3 +1,5 @@
+source "$XDG_CONFIG_HOME/zsh/aliases"
+
 # Enable AUTO_PARAM_SLASH
 setopt AUTO_PARAM_SLASH
 
