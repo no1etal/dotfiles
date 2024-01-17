@@ -146,6 +146,8 @@ alias ntor="$EDITOR /etc/tor/torrc"
 alias nblue="$EDITOR /etc/bluetooth/main.conf"
 alias ncastero="$EDITOR /home/kopachke/.config/castero/castero.conf"
 alias nly="sudo $EDITOR /etc/ly/config.ini"
+alias ntmux="$EDITOR $HOME/.tmux.conf"
+alias nalias="$EDITOR $DOTFILES/zsh/aliases"
 
 #gpg
 #verify signature for isos
@@ -164,4 +166,8 @@ alias xdw="ls /usr/share/wayland-sessions"
 alias personal='cp -Rf /personal/* ~'
 #source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
+###################################
+#Sourcing
+###################################
 
+alias sozsh="source $DOTFILES/zsh/.zshrc"
