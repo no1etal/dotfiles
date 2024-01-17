@@ -42,5 +42,5 @@ cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
 ########
 # tmux #
 ########
-#mkdir -p "$XDG_CONFIG_HOME/tmux"
-ln -sf "$DOTFILES/tmux/tmux.conf" "/home/kopachke/.tmux.conf"
+mkdir -p "/home/kopachke/.config/tmux"
+ln -sf "$DOTFILES/tmux/tmux.conf" "/home/kopachke/.config/tmux/tmux.conf"
