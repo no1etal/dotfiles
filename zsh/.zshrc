@@ -1,5 +1,5 @@
 source "$XDG_CONFIG_HOME/zsh/aliases"
-
+source "/home/kopachke/.gpt_api"
 # Enable AUTO_PARAM_SLASH
 setopt AUTO_PARAM_SLASH
 
@@ -30,3 +30,5 @@ if [ "$(tty)" = "/dev/tty1" ];
 then
 pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
 fi
+
+
