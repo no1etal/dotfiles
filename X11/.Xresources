@@ -35,3 +35,5 @@ URxvt*internalBorder: 4
 URxvt*scrollBar: false
 
 URxvt*saveLines: 5000
+
+#kitty*font: xft:Inconsolata Nerd Font Mono:style=Medium:size=14:pixelsize=16:antialias=true
