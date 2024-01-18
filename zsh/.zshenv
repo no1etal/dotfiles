@@ -25,3 +25,6 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # Web Browser
 export BROSER="firefox"
+
+# PATHS
+export PATH=/home/kopachke/.local/bin:$PATH

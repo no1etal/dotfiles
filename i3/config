@@ -386,7 +386,7 @@ bindsym $mod+Ctrl+Left workspace prev
 ########################
 
 #exec --no-startup-id picom
-exec --no-startup-id nitrogen --restore
+#exec --no-startup-id nitrogen --restore
 exec --no-startup-id polybar
 exec_always --no-startup-id picom --config  ~/.config/picom.conf
 
