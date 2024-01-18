@@ -9,9 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-
 # Wallpaper
- exec_always --no-startup-id picom --config  ~/.config/picom.conf
 #exec --no-startup-id feh --no-fehbg --bg-fill /home/kopachke/dotfiles/i3/feh/archgrey.png
 # Blurred lock screen
 set $i3lockwall sh ~/.config/i3/scripts/lock.sh
@@ -387,8 +385,10 @@ bindsym $mod+Ctrl+Left workspace prev
 ####autostart section ##
 ########################
 
-exec --no-startup-id picom
-exec --no-startup-id nitrogen
+#exec --no-startup-id picom
+exec --no-startup-id nitrogen --restore
+exec --no-startup-id polybar
+exec_always --no-startup-id picom --config  ~/.config/picom.conf
 
 ###################################
 ######## Apps Shortcuts ###########
@@ -401,3 +401,4 @@ bindsym $mod+b exec bitwarden-desktop
 ###################################
 
 bindsym $mod+z exec "setxkbmap -option 'caps:ctrl_modifier';xcape -e 'Caps_Lock=Escape' &"
+

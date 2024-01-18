@@ -44,3 +44,15 @@ cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
 ########
 mkdir -p "/home/kopachke/.config/tmux"
 ln -sf "$DOTFILES/tmux/tmux.conf" "/home/kopachke/.config/tmux/tmux.conf"
+
+[ ! -d "$XDG_CONFIG_HOME/tmux/plugins" ] \      ##### According to arch wiki, XDG is not working, so you might need to point the dir manualy
+&& git clone https://github.com/tmux-plugins/tpm \
+"$XDG_CONFIG_HOME/tmux/plugins/tpm"
+
+########
+#  X  ##      Base from https://github.com/ChristianChiarulli/Machfiles/blob/master/x/.xprofile
+########
+
+ln -sf "$DOTFILES/X11/.xprofile" "$HOME"
+
+

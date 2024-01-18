@@ -1,41 +1,85 @@
-*.foreground:#C6C6C6
-*.background:#1C1C1C
-*.cursorColor:#444444
+!*.foreground:#C6C6C6
+!*.background:#1C1C1C
+!*.cursorColor:#444444
+!
+!! black 236 238
+!*.color0: #303030
+!*.color8: #444444
+!! red 167
+!*.color1: #d75f5f
+!*.color9: #d75f5f
+!! green 108
+!*.color2: #87AF87
+!*.color10: #87AF87
+!! yellow 221
+!*.color3: #ffd75f
+!*.color11: #ffd75f
+!! blue 110
+!*.color4: #87afd7
+!*.color12: #87afd7
+!! magenta 146
+!*.color5: #afafd7
+!*.color13: #afafd7
+!! cyan 75
+!*.color6: #afd7ff
+!*.color14: #afd7ff
+!! white 239 15
+!*.color7: #e4e4e4
+!*.color15: #ffffff
+!
+!
+!URxvt*font: xft:DejaVuSansMono:size=14:antialias=true
+!URxvt*borderLess: false
+!URxvt*externalBorder: 0
+!URxvt*internalBorder: 4
+!URxvt*scrollBar: false
+!
+!URxvt*saveLines: 5000
+!
+!kitty*font: xft:Inconsolata Nerd Font Mono:style=Medium:size=14:pixelsize=16:antialias=true
+!!kitty.font: DejaVu Sans Mono:size=12
+!
+*.font:	Monospace:pixelsize=25:antialias=true:autohint=true;
+*.fontalt0:Braille:pixelsize=24:antialias=true:autohint=true;
+/* *.fontalt1:JoyPixels:pixelsize=24:antialias=true:autohint=true; */
+*.alpha: 0.90
 
-! black 236 238
-*.color0: #303030
-*.color8: #444444
-! red 167
-*.color1: #d75f5f
-*.color9: #d75f5f
-! green 108
-*.color2: #87AF87
-*.color10: #87AF87
-! yellow 221
-*.color3: #ffd75f
-*.color11: #ffd75f
-! blue 110
-*.color4: #87afd7
-*.color12: #87afd7
-! magenta 146
-*.color5: #afafd7
-*.color13: #afafd7
-! cyan 75
-*.color6: #afd7ff
-*.color14: #afd7ff
-! white 239 15
-*.color7: #e4e4e4
-*.color15: #ffffff
+! colors
 
+! special
+*.foreground:   #B8BEC9
+*.background:   #212121
+*.cursorColor:  #ECEFF4
+*.revCursorColor:  #555555
 
-URxvt*font: xft:DejaVuSansMono:size=14:antialias=true
-URxvt*borderLess: false
-URxvt*externalBorder: 0
-URxvt*internalBorder: 4
-URxvt*scrollBar: false
+! black
+*.color0:       #4C566A
+*.color8:       #6C768A
 
-URxvt*saveLines: 5000
+! red
+*.color1:       #BF616A
+*.color9:       #af7370
 
-kitty*font: xft:Inconsolata Nerd Font Mono:style=Medium:size=14:pixelsize=16:antialias=true
-!kitty.font: DejaVu Sans Mono:size=12
+! green
+*.color2:       #A3BE8C
+*.color10:      #B5CEA8
 
+! yellow
+*.color3:       #D7BA7D
+*.color11:      #E7cb93
+
+! blue
+*.color4:       #5e81ac
+*.color12:      #69A8C6
+
+! magenta
+*.color5:       #B48EAD
+*.color13:      #939ede
+
+! cyan
+*.color6:       #88c0d0
+*.color14:      #69BAC8
+
+! white
+*.color7:       #ABB2BF
+*.color15:      #D8DEE9

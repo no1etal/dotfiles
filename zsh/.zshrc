@@ -3,6 +3,7 @@ source "/home/kopachke/.gpt_api"
 # Enable AUTO_PARAM_SLASH
 setopt AUTO_PARAM_SLASH
 
+/home/kopachke/dotfiles/i3/scripts/print256colours.sh
 # Disable CASE_GLOB
 unsetopt CASE_GLOB
 
@@ -31,4 +32,4 @@ then
 pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
 fi
 
-
+#ftmuxp
