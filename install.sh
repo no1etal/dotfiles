@@ -59,4 +59,9 @@ ln -sf "$DOTFILES/tmux/tmux.conf" "/home/kopachke/.config/tmux/tmux.conf"
 
 ln -sf "$DOTFILES/X11/.xprofile" "$HOME"
 
+##########
+# Ranger #
+##########
 
+rm -rf "$XDG_CONFIG_HOME/ranger/"
+ln -s "$DOTFILES/ranger/" "$XDG_CONFIG_HOME/ranger/"
