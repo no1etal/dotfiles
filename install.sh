@@ -92,7 +92,7 @@ ln -s "$DOTFILES/hypr"
 ##################
 
 rm -rf "$XDG_CONFIG_HOME/alacritty"
-ln -s "$DOTFILES/alacritty"
+ln -s "$DOTFILES/alacritty" "$XDG_CONFIG_HOME/alacritty"
 
 ##########
 # btop ###
