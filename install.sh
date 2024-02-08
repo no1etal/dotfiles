@@ -128,7 +128,7 @@ ln -s "$DOTFILES/waybar/"
 ############
 
 rm -rf "$XDG_CONFIG_HOME/wofi/"
-ln -s "$DOTFILES/wofi/"
+ln -s "$DOTFILES/wofi/" "$XDG_CONFIG_HOME/wofi"
 
 ################
 #    zathura ###
