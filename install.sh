@@ -114,7 +114,7 @@ ln -s "$DOTFILES/mpd"
 # Optimised for home network and hpserver
 
 rm -rf "$HOME/ncmpcpp/"
-ln -s "$DOTFILES/ncmpcpp"
+ln -s "$DOTFILES/ncmpcpp" "$HOME/.ncmpcpp/"
 
 ##############
 # waybar   ###
