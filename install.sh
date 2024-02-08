@@ -113,7 +113,7 @@ ln -s "$DOTFILES/mpd"
 #############
 # Optimised for home network and hpserver
 
-rm -rf "$XDG_CONFIG_HOME/ncmpcpp/"
+rm -rf "$HOME/ncmpcpp/"
 ln -s "$DOTFILES/ncmpcpp"
 
 ##############
