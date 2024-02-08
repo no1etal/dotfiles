@@ -70,7 +70,21 @@ ln -s "$DOTFILES/ranger/" "$XDG_CONFIG_HOME/ranger/"
 # yazi ##
 # #######
 
-rm -rd "$XDG_CONFIG_HOME/yazi"
+rm -rf "$XDG_CONFIG_HOME/yazi"
 ln -s "$DOTFILES/yazi"
+
+#########
+# kitty #
+#########
+
+rm -rf "XDG_CONFIG_HOME/kitty"
+ln -s "$DOTFILES/kitty/"
+
+#########
+# hypr ##
+#########
+
+rm -rf "XDG_CONFIG_HOME/hypr"
+ln -s "$DOTFILES/hypr"
 
 
