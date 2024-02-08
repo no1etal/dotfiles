@@ -121,7 +121,7 @@ ln -s "$DOTFILES/ncmpcpp"
 ##############
 
 rm -rf "XDG_CONFIG_HOME/waybar"
-ln -s "$DOTFILES/waybar/"
+ln -s "$DOTFILES/waybar/" "$XDG_CONFIG_HOME/waybar/"
 
 ############
 #   wofi ###
