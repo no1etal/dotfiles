@@ -71,7 +71,7 @@ ln -s "$DOTFILES/ranger/" "$XDG_CONFIG_HOME/ranger/"
 # #######
 
 rm -rf "$XDG_CONFIG_HOME/yazi"
-ln -s "$DOTFILES/yazi" 
+ln -s "$DOTFILES/yazi" "$XDG_CONFIG_HOME/yazi"
 
 #########
 # kitty #
