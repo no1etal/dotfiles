@@ -77,21 +77,35 @@ ln -s "$DOTFILES/yazi"
 # kitty #
 #########
 
-rm -rf "XDG_CONFIG_HOME/kitty"
+rm -rf "$XDG_CONFIG_HOME/kitty"
 ln -s "$DOTFILES/kitty/"
 
 #########
 # hypr ##
 #########
 
-rm -rf "XDG_CONFIG_HOME/hypr"
+rm -rf "$XDG_CONFIG_HOME/hypr"
 ln -s "$DOTFILES/hypr"
 
 ##################
 ## alacritty   ###
 ##################
 
-rm -rf "XDG_CONFIG_HOME/alacritty"
+rm -rf "$XDG_CONFIG_HOME/alacritty"
 ln -s "$DOTFILES/alacritty"
+
+##########
+# btop ###
+##########
+
+rm -rf "$XDG_CONFIG_HOME/btop"
+ln -s "$DOTFILES/btop"
+
+########
+# mpd ##
+########
+
+rm -rf "$XDG_CONFIG_HOME/mpd"
+ln -s "$DOTFILES/mpd"
 
 
