@@ -26,11 +26,12 @@ alias colors='curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f4
  alias i="chatgpt -i"
  alias class="xprop WM_CLASS"
  alias colors="/home/kopachke/dotfiles/i3/scripts/print256colours.sh"
-
+ alias ncmpcpp="/home/kopachke/scripts/music-server.sh"
+ 
  ####### Arco linux aliases ############
  #######################################
  
- #pacman
+#pacman
 alias sps='sudo pacman -S'      # install packages.
 alias spr='sudo pacman -R'      # remove packages
 alias sprs='sudo pacman -Rs'    # remove packages and their dependencies
@@ -150,6 +151,15 @@ alias nly="sudo $EDITOR /etc/ly/config.ini"
 alias ntmux="$EDITOR $HOME/.tmux.conf"
 alias nalias="$EDITOR $DOTFILES/zsh/aliases"
 alias nsx="$EDITOR $XDG_CONFIG_HOME/sxhkd/sxhkdrc"
+
+#### wayland
+alias nyk="$EDITOR $XDG_CONFIG_HOME/yazi/keymap.toml"
+alias nya="$EDITOR $XDG_CONFIG_HOME/yazi/yazi.toml"
+alias nyt="$EDITOR $XDG_CONFIG_HOME/yazi/theme.toml"
+
+alias nhyper="$EDITOR $XDG_CONFIG_HOME/hypr/hyprland.conf"
+alias nwaybar="$EDITOR $XDG_CONFIG_HOME/waybar/config"
+alias nwaybarstyle="$EDITOR $XDG_CONFIG_HOME/waybar/style.css"
 
 #gpg
 #verify signature for isos

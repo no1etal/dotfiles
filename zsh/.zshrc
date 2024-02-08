@@ -2,8 +2,9 @@ source "$XDG_CONFIG_HOME/zsh/aliases"
 source "/home/kopachke/.gpt_api"
 # Enable AUTO_PARAM_SLASH
 setopt AUTO_PARAM_SLASH
-
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 /home/kopachke/dotfiles/i3/scripts/print256colours.sh
+neofetch
 # Disable CASE_GLOB
 unsetopt CASE_GLOB
 
@@ -32,4 +33,12 @@ then
 pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
 fi
 
+#plug "zsh-users/zsh-autosuggestions"
+setopt autocd extendedglob nomatch menucomplete
+setopt interactive_comments
+
+#zsh_add_plugin "zsh-users/zsh-autosuggestions"
+
 #ftmuxp
+
+export PATH=$PATH:/home/kopachke/.spicetify

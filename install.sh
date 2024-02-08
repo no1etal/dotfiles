@@ -65,3 +65,12 @@ ln -sf "$DOTFILES/X11/.xprofile" "$HOME"
 
 rm -rf "$XDG_CONFIG_HOME/ranger/"
 ln -s "$DOTFILES/ranger/" "$XDG_CONFIG_HOME/ranger/"
+
+#########
+# yazi ##
+# #######
+
+rm -rd "$XDG_CONFIG_HOME/yazi"
+ln -s "$DOTFILES/yazi"
+
+
