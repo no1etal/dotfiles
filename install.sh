@@ -87,4 +87,11 @@ ln -s "$DOTFILES/kitty/"
 rm -rf "XDG_CONFIG_HOME/hypr"
 ln -s "$DOTFILES/hypr"
 
+##################
+## alacritty   ###
+##################
+
+rm -rf "XDG_CONFIG_HOME/alacritty"
+ln -s "$DOTFILES/alacritty"
+
 
