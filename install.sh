@@ -108,4 +108,18 @@ ln -s "$DOTFILES/btop"
 rm -rf "$XDG_CONFIG_HOME/mpd"
 ln -s "$DOTFILES/mpd"
 
+#############
+# ncmpcpp  ##
+#############
+# Optimised for home network and hpserver
+
+rm -rf "$XDG_CONFIG_HOME/ncmpcpp/"
+ln -s "$DOTFILES/ncmpcpp"
+
+##############
+# waybar   ###
+##############
+
+rm -rf "XDG_CONFIG_HOME/waybar"
+ln -s "$DOTFILES/waybar/"
 
