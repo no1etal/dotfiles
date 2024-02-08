@@ -104,10 +104,13 @@ ln -s "$DOTFILES/btop"
 ########
 # mpd ##
 ########
-
-rm -rf "$XDG_CONFIG_HOME/mpd"
-ln -s "$DOTFILES/mpd"
-
+# mpd database and logs should be in ~/.local/share/mpd but I can't find it now. Maybe I deleted it?
+#
+#rm -rf "$XDG_CONFIG_HOME/mpd"
+#ln -s "$DOTFILES/mpd" "$XDG_CONFIG_HOME/mpd"
+#
+#
+#
 #############
 # ncmpcpp  ##
 #############
