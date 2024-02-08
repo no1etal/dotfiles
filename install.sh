@@ -135,4 +135,4 @@ ln -s "$DOTFILES/wofi/"
 ################
 
 rm -rf "$XDG_CONFIG_HOME/zathura/"
-ln -s "$DOTFILES/zathura/"
+ln -s "$DOTFILES/zathura/" "$XDG_CONFIG_HOME/zathura"
