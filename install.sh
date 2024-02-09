@@ -64,7 +64,7 @@ ln -sf "$DOTFILES/X11/.xprofile" "$HOME"
 ##########
 
 rm -rf "$XDG_CONFIG_HOME/ranger/"
-ln -s "$DOTFILES/ranger/" "$XDG_CONFIG_HOME/ranger/"
+ln -s "$DOTFILES/ranger/" "$XDG_CONFIG_HOME/ranger"
 
 #########
 # yazi ##
@@ -117,14 +117,14 @@ ln -s "$DOTFILES/btop" "XDG_CONFIG_HOME/btop"
 # Optimised for home network and hpserver
 
 rm -rf "$HOME/ncmpcpp/"
-ln -s "$DOTFILES/ncmpcpp" "$HOME/.ncmpcpp/"
+ln -s "$DOTFILES/ncmpcpp" "$HOME/.ncmpcpp"
 
 ##############
 # waybar   ###
 ##############
 
 rm -rf "XDG_CONFIG_HOME/waybar"
-ln -s "$DOTFILES/waybar/" "$XDG_CONFIG_HOME/waybar/"
+ln -s "$DOTFILES/waybar/" "$XDG_CONFIG_HOME/waybar"
 
 ############
 #   wofi ###
@@ -137,5 +137,5 @@ ln -s "$DOTFILES/wofi/" "$XDG_CONFIG_HOME/wofi"
 #    zathura ###
 ################
 
-rm -rf "$XDG_CONFIG_HOME/zathura/"
+rm -rf "$XDG_CONFIG_HOME/zathura"
 ln -s "$DOTFILES/zathura/" "$XDG_CONFIG_HOME/zathura"
