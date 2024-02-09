@@ -63,12 +63,15 @@ ln -sf "$DOTFILES/X11/.xprofile" "$HOME"
 # Ranger #
 ##########
 
+mkdir -p "$XDG_CONFIG_HOME/ranger"
 rm -rf "$XDG_CONFIG_HOME/ranger/"
 ln -s "$DOTFILES/ranger/" "$XDG_CONFIG_HOME/ranger"
 
 #########
 # yazi ##
 # #######
+
+mkdir -p "$XDG_CONFIG_HOME/yazi"
 
 rm -rf "$XDG_CONFIG_HOME/yazi"
 ln -s "$DOTFILES/yazi" "$XDG_CONFIG_HOME/yazi"
@@ -77,12 +80,17 @@ ln -s "$DOTFILES/yazi" "$XDG_CONFIG_HOME/yazi"
 # kitty #
 #########
 
+mkdir -p "$XDG_CONFIG_HOME/kitty"
+
+
 rm -rf "$XDG_CONFIG_HOME/kitty"
 ln -s "$DOTFILES/kitty/" "$XDG_CONFIG_HOME/kitty"
  
 #########
 # hypr ##
 #########
+
+mkdir -p "$XDG_CONFIG_HOME/hypr"
 
 rm -rf "$XDG_CONFIG_HOME/hypr"
 ln -s "$DOTFILES/hypr" "$XDG_CONFIG_HOME/hypr"
@@ -91,12 +99,16 @@ ln -s "$DOTFILES/hypr" "$XDG_CONFIG_HOME/hypr"
 ## alacritty   ###
 ##################
 
+mkdir -p "$XDG_CONFIG_HOME/alacritty/"
+
 rm -rf "$XDG_CONFIG_HOME/alacritty"
 ln -s "$DOTFILES/alacritty" "$XDG_CONFIG_HOME/alacritty"
 
 ##########
 # btop ###
 ##########
+
+mkdir -p "$XDG_CONFIG_HOME/btop"
 
 rm -rf "$XDG_CONFIG_HOME/btop"
 ln -s "$DOTFILES/btop" "XDG_CONFIG_HOME/btop"
@@ -116,12 +128,16 @@ ln -s "$DOTFILES/btop" "XDG_CONFIG_HOME/btop"
 #############
 # Optimised for home network and hpserver
 
+mkdir -p "$HOME/.ncmpcpp"
+
 rm -rf "$HOME/ncmpcpp/"
 ln -s "$DOTFILES/ncmpcpp" "$HOME/.ncmpcpp"
 
 ##############
 # waybar   ###
 ##############
+
+mkdir -p "$XDG_CONFIG_HOME/waybar"
 
 rm -rf "XDG_CONFIG_HOME/waybar"
 ln -s "$DOTFILES/waybar/" "$XDG_CONFIG_HOME/waybar"
@@ -130,12 +146,16 @@ ln -s "$DOTFILES/waybar/" "$XDG_CONFIG_HOME/waybar"
 #   wofi ###
 ############
 
+mkdir -p "$XDG_CONFIG_HOME/wofi"
+
 rm -rf "$XDG_CONFIG_HOME/wofi/"
 ln -s "$DOTFILES/wofi/" "$XDG_CONFIG_HOME/wofi"
 
 ################
 #    zathura ###
 ################
+
+mkdir -p "$XDG_CONFIG_HOME/zathura"
 
 rm -rf "$XDG_CONFIG_HOME/zathura"
 ln -s "$DOTFILES/zathura/" "$XDG_CONFIG_HOME/zathura"
