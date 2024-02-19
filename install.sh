@@ -67,7 +67,7 @@ ln -sf "$DOTFILES/X11/.xprofile" "$HOME"
 
 mkdir -p "$XDG_CONFIG_HOME/ranger"
 rm -rf "$XDG_CONFIG_HOME/ranger/"
-ln -s "$DOTFILES/ranger/" "$XDG_CONFIG_HOME/ranger"
+ln -s "$DOTFILES/ranger/" "$XDG_CONFIG_HOME"
 
 #########
 # yazi ##
@@ -76,7 +76,7 @@ ln -s "$DOTFILES/ranger/" "$XDG_CONFIG_HOME/ranger"
 mkdir -p "$XDG_CONFIG_HOME/yazi"
 
 rm -rf "$XDG_CONFIG_HOME/yazi"
-ln -s "$DOTFILES/yazi" "$XDG_CONFIG_HOME/yazi"
+ln -s "$DOTFILES/yazi" "$XDG_CONFIG_HOME"
 
 #########
 # kitty #
@@ -86,7 +86,7 @@ ln -s "$DOTFILES/yazi" "$XDG_CONFIG_HOME/yazi"
 
 
 rm -rf "$XDG_CONFIG_HOME/kitty"
-ln -s "$DOTFILES/kitty/" "$XDG_CONFIG_HOME/kitty"
+ln -s "$DOTFILES/kitty/" "$XDG_CONFIG_HOME"
  
 #########
 # hypr ##
@@ -95,7 +95,7 @@ ln -s "$DOTFILES/kitty/" "$XDG_CONFIG_HOME/kitty"
 #mkdir -p "$XDG_CONFIG_HOME/hypr"
 
 rm -rf "$XDG_CONFIG_HOME/hypr"
-ln -s "$DOTFILES/hypr" "$XDG_CONFIG_HOME/hypr"
+ln -s "$DOTFILES/hypr" "$XDG_CONFIG_HOME"
 
 ##################
 ## alacritty   ###
@@ -104,7 +104,7 @@ ln -s "$DOTFILES/hypr" "$XDG_CONFIG_HOME/hypr"
 #mkdir -p "$XDG_CONFIG_HOME/alacritty/"
 
 rm -rf "$XDG_CONFIG_HOME/alacritty"
-ln -s "$DOTFILES/alacritty" "$XDG_CONFIG_HOME/alacritty"
+ln -s "$DOTFILES/alacritty" "$XDG_CONFIG_HOME"
 
 ##########
 # btop ###
@@ -113,7 +113,7 @@ ln -s "$DOTFILES/alacritty" "$XDG_CONFIG_HOME/alacritty"
 #mkdir -p "$XDG_CONFIG_HOME/btop"
 
 #rm -rf "$XDG_CONFIG_HOME/btop"
-ln -sf "$DOTFILES/btop" "XDG_CONFIG_HOME/btop"
+ln -sf "$DOTFILES/btop" "XDG_CONFIG_HOME"
 
 ########
 # mpd ##
