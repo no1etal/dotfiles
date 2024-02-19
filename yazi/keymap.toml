@@ -148,6 +148,8 @@ keymap = [
 	{ on = [ "g", "w" ],       exec = "cd ~/hpsamba/home/drigy/watch/",   desc = "Go to the rtorrent watch directory" },
 	{ on = [ "g", "q" ],       exec = "cd ~/hpsamba/home/storage/qnap/",   desc = "Go to the qnap directory" },
 	{ on = [ "g", "a" ],       exec = "cd ~/hpsamba/home/storage/qnap/.myanon",   desc = "Go to the rorrent DL directory" },
+	{ on = [ "g", "z" ],       exec = "cd $XDG_CONFIG_HOME/zinger/zingers.txt",   desc = "Go to the rorrent DL directory" },
+	{ on = [ "g", "l" ],       exec = "cd ~/.local",   desc = "Go to the .local directory" },
 	# Help
 	{ on = [ "~" ], exec = "help", desc = "Open help" },
 ]

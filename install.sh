@@ -36,12 +36,14 @@ ln -sf "$DOTFILES/zsh/external" "$XDG_CONFIG_HOME/zsh"
 #########
 # Fonts #
 #########
+
 mkdir -p "$XDG_DATA_HOME"
 cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
 
 ########
 # tmux #
 ########
+
 mkdir -p "/home/kopachke/.config/tmux"
 ln -sf "$DOTFILES/tmux/tmux.conf" "/home/kopachke/.config/tmux/tmux.conf"
 
@@ -80,7 +82,7 @@ ln -s "$DOTFILES/yazi" "$XDG_CONFIG_HOME/yazi"
 # kitty #
 #########
 
-mkdir -p "$XDG_CONFIG_HOME/kitty"
+#mkdir -p "$XDG_CONFIG_HOME/kitty"
 
 
 rm -rf "$XDG_CONFIG_HOME/kitty"
@@ -90,7 +92,7 @@ ln -s "$DOTFILES/kitty/" "$XDG_CONFIG_HOME/kitty"
 # hypr ##
 #########
 
-mkdir -p "$XDG_CONFIG_HOME/hypr"
+#mkdir -p "$XDG_CONFIG_HOME/hypr"
 
 rm -rf "$XDG_CONFIG_HOME/hypr"
 ln -s "$DOTFILES/hypr" "$XDG_CONFIG_HOME/hypr"
@@ -99,7 +101,7 @@ ln -s "$DOTFILES/hypr" "$XDG_CONFIG_HOME/hypr"
 ## alacritty   ###
 ##################
 
-mkdir -p "$XDG_CONFIG_HOME/alacritty/"
+#mkdir -p "$XDG_CONFIG_HOME/alacritty/"
 
 rm -rf "$XDG_CONFIG_HOME/alacritty"
 ln -s "$DOTFILES/alacritty" "$XDG_CONFIG_HOME/alacritty"
@@ -108,10 +110,10 @@ ln -s "$DOTFILES/alacritty" "$XDG_CONFIG_HOME/alacritty"
 # btop ###
 ##########
 
-mkdir -p "$XDG_CONFIG_HOME/btop"
+#mkdir -p "$XDG_CONFIG_HOME/btop"
 
-rm -rf "$XDG_CONFIG_HOME/btop"
-ln -s "$DOTFILES/btop" "XDG_CONFIG_HOME/btop"
+#rm -rf "$XDG_CONFIG_HOME/btop"
+ln -sf "$DOTFILES/btop" "XDG_CONFIG_HOME/btop"
 
 ########
 # mpd ##
@@ -128,16 +130,16 @@ ln -s "$DOTFILES/btop" "XDG_CONFIG_HOME/btop"
 #############
 # Optimised for home network and hpserver
 
-mkdir -p "$HOME/.ncmpcpp"
+#mkdir -p "$HOME/.ncmpcpp"
 
-rm -rf "$HOME/ncmpcpp/"
+rm -rf "$HOME/.ncmpcpp/"
 ln -s "$DOTFILES/ncmpcpp" "$HOME/.ncmpcpp"
 
 ##############
 # waybar   ###
 ##############
 
-mkdir -p "$XDG_CONFIG_HOME/waybar"
+#mkdir -p "$XDG_CONFIG_HOME/waybar"
 
 rm -rf "XDG_CONFIG_HOME/waybar"
 ln -s "$DOTFILES/waybar/" "$XDG_CONFIG_HOME/waybar"
@@ -146,16 +148,16 @@ ln -s "$DOTFILES/waybar/" "$XDG_CONFIG_HOME/waybar"
 #   wofi ###
 ############
 
-mkdir -p "$XDG_CONFIG_HOME/wofi"
+#mkdir -p "$XDG_CONFIG_HOME/wofi"
+rm -R -rf "$XDG_CONFIG_HOME/wofi/"
 
-rm -rf "$XDG_CONFIG_HOME/wofi/"
 ln -s "$DOTFILES/wofi/" "$XDG_CONFIG_HOME/wofi"
 
 ################
 #    zathura ###
 ################
 
-mkdir -p "$XDG_CONFIG_HOME/zathura"
+#mkdir -p "$XDG_CONFIG_HOME/zathura"
 
 rm -rf "$XDG_CONFIG_HOME/zathura"
 ln -s "$DOTFILES/zathura/" "$XDG_CONFIG_HOME/zathura"

@@ -1,5 +1,15 @@
 source "$XDG_CONFIG_HOME/zsh/aliases"
 source "/home/kopachke/.gpt_api"
+
+
+# zshrc
+__fzf_nova__() {
+  /home/kopachke/.local/share/fzf-nova/fzf-nova
+}
+zle     -N             __fzf_nova__
+#bindkey -M emacs '^[m' __fzf_nova__
+bindkey -F vicmd '^[f' __fzf_nova__
+
 # Enable AUTO_PARAM_SLASH
 setopt AUTO_PARAM_SLASH
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -9,7 +19,9 @@ neofetch
 unsetopt CASE_GLOB
 
 autoload -U compinit; compinit
-
+#  what is printed in front of the cursor:
+PS1='%~ %F{green}%#%f 
+λ '
 # Autocomplete hidden files
 _comp_options+=(globdots)
 source ~/dotfiles/zsh/external/completion.zsh
@@ -40,5 +52,14 @@ setopt interactive_comments
 #zsh_add_plugin "zsh-users/zsh-autosuggestions"
 
 #ftmuxp
-
+#
+# Yazi setting to change the current working directory when exiting Yazi.
+function ya() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
 export PATH=$PATH:/home/kopachke/.spicetify

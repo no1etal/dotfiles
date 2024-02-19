@@ -26,8 +26,11 @@ alias colors='curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f4
  alias i="chatgpt -i"
  alias class="xprop WM_CLASS"
  alias colors="/home/kopachke/dotfiles/i3/scripts/print256colours.sh"
- alias ncmpcpp="/home/kopachke/scripts/music-server.sh"
- 
+ #alias ncmpcpp="/home/kopachke/scripts/music-server.sh"
+ alias y="yazi"
+ alias install="/home/kopachke/dotfiles/install.sh"
+ alias nova="/home/kopachke/.local/share/fzf-nova/fzf-nova"
+
  ####### Arco linux aliases ############
  #######################################
  
@@ -192,3 +195,7 @@ alias t="tmux"
 alias ta="t a -t"
 alias tls="t ls"
 alias tn="t new -t"
+
+# Mount hpserver dirs
+alias mmusic="sshfs -p 50080 drigy@192.168.1.7:/home/storage/qnap/music ~/hpmusic"
+alias mqnap="sshfs -p 50080 drigy@192.168.1.7:/ ~/hpsamba"
