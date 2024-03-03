@@ -142,16 +142,16 @@ ln -s "$DOTFILES/ncmpcpp" "$HOME/.ncmpcpp"
 #mkdir -p "$XDG_CONFIG_HOME/waybar"
 
 rm -rf "XDG_CONFIG_HOME/waybar"
-ln -s "$DOTFILES/waybar/" "$XDG_CONFIG_HOME/waybar"
+ln -s "$DOTFILES/waybar/" "$XDG_CONFIG_HOME"
 
 ############
 #   wofi ###
 ############
 
 #mkdir -p "$XDG_CONFIG_HOME/wofi"
-rm -R -rf "$XDG_CONFIG_HOME/wofi/"
+rm -rf "$XDG_CONFIG_HOME/wofi/"
 
-ln -s "$DOTFILES/wofi/" "$XDG_CONFIG_HOME/wofi"
+ln -s "$DOTFILES/wofi/" "$XDG_CONFIG_HOME"
 
 ################
 #    zathura ###
