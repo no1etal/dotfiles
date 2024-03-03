@@ -27,4 +27,6 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 #export BROSER="firefox"
 
 # PATHS
-export PATH=/home/kopachke/.local/bin:$PATH
+#export PATH=/home/kopachke/.local/bin:$PATH
+export PATH="/home/kopachke/.local/share:~/go/bin:$PATH"
+

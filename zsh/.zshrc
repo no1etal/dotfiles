@@ -1,7 +1,6 @@
 source "$XDG_CONFIG_HOME/zsh/aliases"
 source "/home/kopachke/.gpt_api"
-
-
+source "/home/kopachke/dotfiles/zsh/fzf"
 # zshrc
 __fzf_nova__() {
   /home/kopachke/.local/share/fzf-nova/fzf-nova
@@ -12,7 +11,7 @@ bindkey -F vicmd '^[f' __fzf_nova__
 
 # Enable AUTO_PARAM_SLASH
 setopt AUTO_PARAM_SLASH
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 /home/kopachke/dotfiles/i3/scripts/print256colours.sh
 neofetch
 # Disable CASE_GLOB
@@ -39,7 +38,7 @@ if [ $(command -v "fzf") ]; then
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 fi
-
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 if [ "$(tty)" = "/dev/tty1" ];
 then
 pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
@@ -63,3 +62,4 @@ function ya() {
 	rm -f -- "$tmp"
 }
 export PATH=$PATH:/home/kopachke/.spicetify
+

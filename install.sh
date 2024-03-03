@@ -113,7 +113,7 @@ ln -s "$DOTFILES/alacritty" "$XDG_CONFIG_HOME"
 #mkdir -p "$XDG_CONFIG_HOME/btop"
 
 #rm -rf "$XDG_CONFIG_HOME/btop"
-ln -sf "$DOTFILES/btop" "XDG_CONFIG_HOME"
+ln -sf "$DOTFILES/btop" "$XDG_CONFIG_HOME"
 
 ########
 # mpd ##
