@@ -149,9 +149,9 @@ ln -s "$DOTFILES/waybar/" "$XDG_CONFIG_HOME"
 ############
 
 #mkdir -p "$XDG_CONFIG_HOME/wofi"
-rm -rf "$XDG_CONFIG_HOME/wofi/"
+rm -rf "$XDG_CONFIG_HOME/wofi"
 
-ln -s "$DOTFILES/wofi/" "$XDG_CONFIG_HOME"
+ln -s "$DOTFILES/wofi" "$XDG_CONFIG_HOME"
 
 ################
 #    zathura ###
