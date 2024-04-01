@@ -62,7 +62,7 @@ function ya() {
 }
 export PATH=$PATH:/home/kopachke/.spicetify
 export PATH=$PATH:/home/kopachke/.local/bin
-
+export PATH=$PATH:/home/kopachke/Apps
 
 ## >>> conda initialize >>>
 ## !! Contents within this block are managed by 'conda init' !!

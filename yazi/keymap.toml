@@ -151,6 +151,8 @@ keymap = [
 	{ on = [ "g", "z" ],       run = "cd $XDG_CONFIG_HOME/zinger/zingers.txt",   desc = "Go to the rorrent DL directory" },
 	{ on = [ "g", "s" ],       run = "cd $XDG_HOME/hpsamba/home/drigy",   desc = "Go to the rorrent my hpserver home dir" },
 	{ on = [ "g", "l" ],       run = "cd ~/.local",   desc = "Go to the .local directory" },
+	{ on = [ "g", "u" ],       run = "cd   /run/media/kopachke",   desc = "Go to mounted USB" },
+
 	# Help
 	{ on = [ "~" ], run = "help", desc = "Open help" },
 ]

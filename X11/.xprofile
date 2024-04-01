@@ -2,7 +2,7 @@
 #dwmblocks &
 #
 ## Random Photo Every Login
- feh --bg-fill --randomize ~/dotfiles/i3/feh &
+# feh --bg-fill --randomize ~/dotfiles/i3/feh &
 #
 #feh --bg-fill ~/Pictures/wallpapers/mac/Mojave\ Night.jpg --bg-fill ~/Pictures/wallpapers/macos-cataline-night-6k.jpg/
 #
@@ -37,6 +37,10 @@ export BROWSER="firefox"
 #export XDG_CACHE_HOME=$HOME/.cache
 #export XDG_DATA_HOME=$HOME/.local/share
 #
+export PATH=$PATH:/home/kopachke/.spicetify
+export PATH=$PATH:/home/kopachke/.local/bin
+
+
 ## Compositor (already set in i3.config)
 #picom -b
 #

@@ -7,9 +7,6 @@ alias gp='git push'
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
 
-alias sps='sudo pacman -S'
-alias update='sudo pacman -Syu'
-
 ###################################   MY ALIASES   ###############################################
 alias colors='curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/e50a28ec54188d2413518788de6c6367ffcea4f7/print256colours.sh | bash'
  alias lsa="exa -la"
@@ -197,7 +194,9 @@ alias tls="t ls"
 alias tn="t new -t"
 
 # Mount hpserver dirs
-alias mmusic="sshfs -p 50080 drigy@192.168.1.7:/home/storage/qnap/music ~/hpmusic"
-alias mqnap="sshfs -p 50080 drigy@192.168.1.7:/ ~/hpsamba"
+#alias mmusic="sshfs -p 50080 drigy@192.168.1.7:/home/storage/qnap/music ~/hpmusic"
+alias mmusic="sshfs -p 50080 drigy@82.136.76.6:/home/storage/qnap/music ~/hpmusic"
+#alias mqnap="sshfs -p 50080 drigy@192.168.1.7:/ ~/hpsamba"
+alias mqnap="sshfs -p 50080 drigy@82.136.76.6:/ ~/hpsamba"
 
 alias cointop="TERM=screen-256color cointop"
