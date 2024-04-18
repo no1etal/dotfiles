@@ -29,6 +29,3 @@ ftmuxp() {
     fi
 }
 
-scratchpad() {
-    "$DOTFILES/zsh/scratchpad.sh"
-}
