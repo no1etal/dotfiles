@@ -24,7 +24,6 @@ ftmuxp() {
         tmux new-session
     elif [[ -n "$ID" ]]; then
         # Rename the current urxvt tab to session name
-        printf '\033]777;tabbedx;set_tab_name;%s\007' "$ID"
         tmuxp load "$ID"
     fi
 }
