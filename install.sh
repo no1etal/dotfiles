@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Check if waypaper is installed
+if ! pacman -Qi waypaper &> /dev/null; then
+    echo "Installing waypaper..."
+    sudo pacman -S waypaper
+    echo "waypaper installed successfully."
+else
+    echo "waypaper is already installed."
+fi
+
 ########
 # nvim #
 ########
@@ -161,3 +170,19 @@ ln -s "$DOTFILES/wofi" "$XDG_CONFIG_HOME"
 
 rm -rf "$XDG_CONFIG_HOME/zathura"
 ln -s "$DOTFILES/zathura/" "$XDG_CONFIG_HOME/zathura"
+
+################
+### Castero ####
+################
+ 
+rm -rf "$XDG_CONFIG_HOME/castero"
+ln -s "$DOTFILES/casterp" "$XDG_CONFIG_HOME/castero"
+
+################
+#### Zinger ####
+################
+
+rm -rf "$XDG_CONFIG_HOME/zinger"
+ln -s "$DOTFILES/zinger" "$XDG_CONFIG_HOME/zinger"
+
+
