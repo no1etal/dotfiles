@@ -1,0 +1,94 @@
+# Usage: go to an article, press Ctrl+e, press s, press enter; it will now show up in your 'Starred Articles' query feed
+# To Cancle: press Escape
+"query:Starred Articles:flags # \"s\""
+https://musicforprogramming.net/rss.xml
+
+------------World Affairs--------------------
+https://feeds.feedburner.com/zerohedge/feed  legendary news counter
+https://www.voltairenet.org/spip.php?page=backend&id_secteur=1110&lang=en
+https://larrycjohnson.substack.com/feed
+https://orientalreview.su/feed/
+
+-----------------OSINT-------------------------
+https://bmanalysis.substack.com/feed
+https://bigserge.substack.com/feed
+https://simplicius76.substack.com/feed
+https://korybko.substack.com/feed
+https://julianmacfarlane.substack.com/feed
+https://mnormandavies.substack.com/feed
+#
+#
+-------------Blockchain----------------------
+https://substack.com/@wublockchain/feed
+https://jarvislabs.substack.com/feed
+https://bitcoinstrategy.substack.com/feed
+#
+-------------Geo Blog------------------------
+https://stavroulapabst.substack.com/feed #Stavroula Pabst is a writer, comedian, and media PhD student at the National and Kapodistrian University of Athens in Athens, Greece. Her writing has appeared in publications including Propaganda in Focus, Reductress, Unlimited Hangout and The Grayzone
+https://www.caitlinjohnst.one/feed
+#In short, what you read in this space is an ongoing collaboration between myself (Australian) and my husband Tim Foley (American) geared toward awakening human consciousness and drawing humanity into my understanding of what a healthy world would look like. All the articles, essays, poems and notes you read here are pointed toward that agenda.
+#When asked to describe this project I often say "I write about the end of illusions," because from my point of view all of the major problems our species now faces are born of a misperception of what's really happening. On a collective level human behavior is being driven by propaganda and the systems it manufactures consent for, and on an individual level we're being driven by the delusion of ego. From my point of view it's all just illusion, so I frequently swing in and out discussing illusion's large- and small-scale manifestations without breaking them up too much; that's why you'll see commentary on mass media manipulations intermingled with what look like spiritual or philosophical observations, often in the same essay. For me it's all one issue.
+#I see illusions as the only obstacle to the creation of a healthy world, which in my view would look like a movement from the competition-based models of capitalism, militarism, imperialism and domination to collaboration-based models where all humans work in cooperation with each other and with our ecosystem toward the common good of all beings. The only things preventing that movement are the large-scale illusions that our rulers have been indoctrinating us with since birth about what's real and what's possible, as well as the small-scale illusions of ego and separation which keep us enslaved to fear, greed, and unconscious reactivity.
+#The prospect of a large-scale awakening of human consciousness and radical transformation of the way humans behave on this planet may sound lofty and impractical, but the way I see it our species has trapped itself in a situation where that will either happen or we'll go the way of the dinosaur. Every species eventually hits a point where it either adapts to changing situations or goes extinct, and as we accelerate toward nuclear war and the destruction of our biosphere it seems fair to say that that crucial juncture is upon homo sapiens now.
+#In my analysis I've been focusing a lot on the US government and the empire-like international cluster of allies, partners and assets structured around it, not because it's the only evil in our world but because at this point in history it is the driving force behind the lion's share of humanity's troubles. The US-centralized empire is ramping up aggressions against Russia and China simultaneously and working to destroy any nation which resists its goals of global conquest, all while using its military and economic might and the most powerful propaganda machine ever devised to coerce humanity into moving in ways that don't serve ordinary people.
+#Because the US propaganda machine is so immensely powerful, my forceful criticisms of the empire are often met with shock and suspicion by the many people who've been indoctrinated by it. Online vitriol is my constant companion, and I've been accused of being a secret agent for every US-targeted nation in the world. I guess it's probably worth mentioning that I have never worked for or been paid by any government of any kind; some people think I've written for RT, but in reality RT is just one of the many outlets who've occasionally chosen on their own to republish my work as part of my longstanding open invitation for anyone who wishes to to use my work for free.
+#My funding comes entirely from people who read and enjoy my work. I've actually got a very interesting system for making a living doing what I do where all the financial support I receive comes my way totally unconditionally from the goodwill of my readers. Because everything I write is available to read for free (even my books come in pay-what-you-want PDF versions and consist entirely of material that's freely available online), they're not purchasing anything from me or expecting to receive anything in return for their gift; they're supporting my work solely because that's what they want to do. This gift economy-based model of survival where everyone gets to read and use all my work for free is one of the ways I try to walk my talk in the way I live on this earth, and lets me be my own kind of living sigil for the direction I'd like to see the world take.
+#This has been a wild and amazing adventure, and I am so grateful for everyone who has made it possible over the years, either with funding, or with likes and shares on social media, or by pointing friends and family to this little space here. I can safely promise that I will continue fighting the machine as hard as I can and pulling the steering wheel toward truth and health for as long as that's what people want me to do. I sincerely believe we can win this thing, and I feel truly blessed to get to spend my time pouring my own small portion of humanity into serving that objective.
+#Thank you all so much.
+--------------Investing----------------------
+https://www.lynalden.com/feed/
+
+---------------Linux ------------------------
+https://www.kali.org/rss.xml
+https://proton.me/blog/feed
+#
+--------------Phylosophy---------------------
+https://neofeudalism.substack.com/feed
+#
+#
+--------------reddit--------------------------
+https://www.reddit.com/r/commandline.rss
+# ------------------------------------------------------
+# https://newsboat.org/releases/2.11.1/docs/newsboat.html#_filter_language
+#------------Youtube---------------------------
+#https://www.youtube.com/@gotbletu.rss
+------------Torrent---------------------------
+https://www.torrentdownload.ch/feed_latest "~BTRSS"
+https://www.mojblink.si/rss?passkey=6ae95e11593f03d61fb211abd5d2e87c&type=dl "~mojblink"
+https://www.mojblink.si/rss?passkey=6ae95e11593f03d61fb211abd5d2e87c&type=web
+-------------slo-torrent----------------------
+https://www.tornado.si/?p=forums&pid=11&action=rss&fid=5
+
+"query:Only 720p:tags =~ \"BTRSS\" and ( title =~ \"720p\" )" "BTRSS"
+"query:Only 1080p:tags =~ \"BTRSS\" and ( title =~ \"1080p\" )" "BTRSS"
+"query:Only SD:tags =~ \"BTRSS\" and ( title =~ \"hdtv|x264|web\" )" "BTRSS"
+
+----------------MSM---------------------------
+http://rss.cnn.com/rss/cnn_topstories.rss
+https://www.politika.rs/rss/
+
+---------------Blogs--------------------------
+https://www.snapsbyfox.com/blog?format=rss
+https://thelinuxcast.org/feed/feed.xml
+https://gideonwolfe.com/index.xml "~Gideon Wolfe"
+https://lukesmith.xyz/rss.xml Blog "~Luke Smith" Tech
+https://thevaluable.dev/index.xml
+https://tux.pizza/feed.xml
+
+--------------Youtube-------------------------
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA Youtube "~Luke Smith" Tech
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsnGwSIHyoYN0kiINAGUKxg Youtube "~Wolfgang's Channel" Tech
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg Youtube "~DistroTube" Tech
+https://www.youtube.com/feeds/videos.xml?channel_id=UCkf4VIqu3Acnfzuk3kRIFwA "~gotbletu"
+--------------Twitter-------------------------
+https://twitrss.me/twitter_user_to_rss/?user=climagic Twitter "~Command Line Magic" Tech
+
+--------------Podcast-------------------------  
+https://notrelated.libsyn.com/rss Podcast "~Notrelated" Tech Lifestyle
+
+--------------Reddit--------------------------
+https://www.reddit.com/r/linuxmemes/.rss Reddit "~Arch Linux memes" Entertainment
+https://www.reddit.com/r/unixporn/.rss Reddit "~Unixporn" Tech
+════════════════════════════════════════════════
+http://getpocket.com/users/drigy/feed/unread 
+# }}}
