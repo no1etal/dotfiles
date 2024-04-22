@@ -185,4 +185,17 @@ ln -s "$DOTFILES/casterp" "$XDG_CONFIG_HOME/castero"
 rm -rf "$XDG_CONFIG_HOME/zinger"
 ln -s "$DOTFILES/zinger" "$XDG_CONFIG_HOME/zinger"
 
+###############
+### tmuxp #####
+###############
 
+rm -rf "$XDG_CONFIG_HOME/tmuxp"
+ln -s "$DOTFILES/tmuxp" "$XDG_CONFIG_HOME/tmuxp/"
+
+####################
+### qutebrowser ####
+####################
+
+rm -rf "$XDG_CONFIG_HOME/qutebrowser"
+git clone https://github.com/catppuccin/qutebrowser.git ~/.config/qutebrowser/catppuccin
+ln -s "$DOTFILES/qutebrowser" "$XDG_CONFIG_HOME/qutebrower"
