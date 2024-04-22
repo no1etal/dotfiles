@@ -118,9 +118,9 @@
         "tooltip": false,
         "format-muted": " Muted",
         "on-click": "pamixer -t",
-        "on-scroll-up": "pamixer -i 1",
-        "on-scroll-down": "pamixer -d 1",
-        "scroll-step": 1,
+        "on-scroll-up": "pamixer -i 2",
+        "on-scroll-down": "pamixer -d 2",
+        "scroll-step": 2,
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -129,6 +129,7 @@
             "portable": "",
             "car": "",
             "default": ["", "", ""]
+            "on-click": mute
         },
 
   "idle_inhibitor": {
