@@ -200,3 +200,4 @@ alias mmusic="sshfs -p 50080 drigy@82.136.76.6:/home/storage/qnap/music ~/hpmusi
 alias mqnap="sshfs -p 50080 drigy@82.136.76.6:/ ~/hpsamba"
 
 alias cointop="TERM=screen-256color cointop"
+alias man="batman"
