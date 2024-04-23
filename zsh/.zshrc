@@ -1,8 +1,11 @@
+### SOURCE
+
 source "$XDG_CONFIG_HOME/zsh/aliases"
 source "/home/kopachke/.gpt_api"
 source "/home/kopachke/dotfiles/zsh/fzf"
 source "/home/kopachke/dotfiles/zsh/scripts.sh"
-# zshrc
+
+# ZSHRC FZF-NOVA
 __fzf_nova__() {
   /home/kopachke/.local/share/fzf-nova/fzf-nova
 }
@@ -16,6 +19,7 @@ setopt AUTO_PARAM_SLASH
 /home/kopachke/dotfiles/i3/scripts/print256colours.sh \
 
 neofetch
+
 # Disable CASE_GLOB
 unsetopt CASE_GLOB
 
