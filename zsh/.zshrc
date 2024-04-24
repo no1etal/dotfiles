@@ -5,14 +5,6 @@ source "/home/kopachke/.gpt_api"
 source "/home/kopachke/dotfiles/zsh/fzf"
 source "/home/kopachke/dotfiles/zsh/scripts.sh"
 
-# ZSHRC FZF-NOVA
-__fzf_nova__() {
-  /home/kopachke/.local/share/fzf-nova/fzf-nova
-}
-zle     -N             __fzf_nova__
-#bindkey -M emacs '^[m' __fzf_nova__
-bindkey -F vicmd '^[f' __fzf_nova__
-
 # Enable AUTO_PARAM_SLASH
 setopt AUTO_PARAM_SLASH
 
@@ -66,6 +58,8 @@ function ya() {
 	fi
 	rm -f -- "$tmp"
 }
+
+########## EXPORT
 export PATH=$PATH:/home/kopachke/.spicetify
 export PATH=$PATH:/home/kopachke/.local/bin
 export PATH=$PATH:/home/kopachke/Apps
@@ -84,4 +78,9 @@ export PATH=$PATH:/home/kopachke/Apps
 #fi
 #unset __conda_setup
 ## <<< conda initialize <<<
+#
+#####
 
+
+# Added zoxide to zsh
+eval "$(zoxide init zsh)"
