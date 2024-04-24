@@ -12,6 +12,8 @@ setopt AUTO_PARAM_SLASH
 
 neofetch
 
+echo "Hello Dragan. Shall we play a game?"
+
 # Disable CASE_GLOB
 unsetopt CASE_GLOB
 
