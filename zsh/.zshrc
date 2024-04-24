@@ -5,14 +5,22 @@ source "/home/kopachke/.gpt_api"
 source "/home/kopachke/dotfiles/zsh/fzf"
 source "/home/kopachke/dotfiles/zsh/scripts.sh"
 
+
+# Autoload and source fzf-tab
+autoload -U compinit; compinit
+source ~/git/fzf-tab.plugin.zsh
+
 # Enable AUTO_PARAM_SLASH
 setopt AUTO_PARAM_SLASH
 
-/home/kopachke/dotfiles/i3/scripts/print256colours.sh \
+/home/kopachke/dotfiles/i3/scripts/print256colours.sh 
+
+echo
 
 neofetch
 
-echo "Hello Dragan. Shall we play a game?"
+echo "Hello Dragan. Shall we play a game?" 
+echo
 
 # Disable CASE_GLOB
 unsetopt CASE_GLOB
