@@ -190,7 +190,7 @@ ln -s "$DOTFILES/zinger" "$XDG_CONFIG_HOME/zinger"
 ###############
 
 rm -rf "$XDG_CONFIG_HOME/tmuxp"
-ln -s "$DOTFILES/tmuxp" "$XDG_CONFIG_HOME/tmuxp/"
+ln -s "$DOTFILES/tmuxp" "$XDG_CONFIG_HOME/tmuxp"
 
 ####################
 ### qutebrowser ####
