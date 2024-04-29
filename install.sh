@@ -198,7 +198,7 @@ ln -s "$DOTFILES/tmuxp" "$XDG_CONFIG_HOME/tmuxp"
 
 rm -rf "$XDG_CONFIG_HOME/qutebrowser"
 git clone https://github.com/catppuccin/qutebrowser.git ~/.config/qutebrowser/catppuccin
-ln -s "$DOTFILES/qutebrowser" "$XDG_CONFIG_HOME/qutebrowser"
+ln -s "$DOTFILES/qutebrowser" "$XDG_CONFIG_HOME"
 
 ###################
 ### newsboat ######

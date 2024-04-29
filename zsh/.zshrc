@@ -8,7 +8,7 @@ source "/home/kopachke/dotfiles/zsh/scripts.sh"
 
 # Autoload and source fzf-tab
 autoload -U compinit; compinit
-source ~/git/fzf-tab.plugin.zsh
+source /home/kopachke/git/fzf-tab/fzf-tab.plugin.zsh
 
 # Enable AUTO_PARAM_SLASH
 setopt AUTO_PARAM_SLASH

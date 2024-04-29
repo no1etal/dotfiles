@@ -1,0 +1,18 @@
+# This file should be in "$XDG_CONFIG_HOME/tmuxp/rss.yml"
+
+session_name: rss
+start_directory: $HOME/
+
+windows:
+    - window_name: cool
+      layout: tiled
+      main-pane-height: 67%
+      panes:
+          - matrix
+          - 
+    - window_name: rss
+      layout: tiled
+      panes:
+          - newsboat
+        
+

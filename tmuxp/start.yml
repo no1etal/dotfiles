@@ -1,0 +1,23 @@
+# This file should be in "$XDG_CONFIG_HOME/tmuxp/start.yml"
+
+session_name: start
+start_directory: $HOME/
+
+windows:
+    - window_name: btop
+      layout: tiled
+      panes:
+          - btop
+    - window_name: music
+      layout: tiled
+      panes:
+          - 
+    - window_name: browser
+      layout: tiled
+      panes:
+          - yazi
+
+    - window_name: work
+      layout: tiled
+      panes: 
+          - 

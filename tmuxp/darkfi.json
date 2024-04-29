@@ -1,0 +1,17 @@
+   {
+  "session_name": "darkfi",
+  "start_directory": "$HOME/git/darkfi",
+  "windows": [
+    {
+      "window_name": "darkfi",
+      "layout": "even-horizontal",
+      "panes": ["darkfid", "ircd", "weechat", "unimatrix -a -b -c magenta"]
+    },
+    {
+      "window_name": "yazi",
+      "layout": "even-horizontal",
+      "panes": ["yazi", "termscp"]
+    }
+  ]
+}
+ 
