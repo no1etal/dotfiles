@@ -142,7 +142,7 @@ ln -sf "$DOTFILES/btop" "$XDG_CONFIG_HOME"
 #mkdir -p "$HOME/.ncmpcpp"
 
 rm -rf "$HOME/.ncmpcpp/"
-ln -s "$DOTFILES/ncmpcpp" "$HOME/.ncmpcpp"
+ln -s "$DOTFILES/ncmpcpp" "$HOME"
 
 ##############
 # waybar   ###
