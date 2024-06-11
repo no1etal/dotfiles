@@ -21,6 +21,7 @@ alias colors='curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f4
  alias npicom="$EDITOR ~/.config/picom.conf"
  alias cg="chatgpt" 
  alias i="chatgpt -i"
+ alias g="/home/kopachke/go/bin/gemini"
  alias class="xprop WM_CLASS"
  alias colors="/home/kopachke/dotfiles/i3/scripts/print256colours.sh"
  #alias ncmpcpp="/home/kopachke/scripts/music-server.sh"

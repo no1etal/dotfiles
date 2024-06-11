@@ -10,7 +10,7 @@ windows:
           - btop
     - window_name: music
       layout: tiled
-      panes:
+      panes: ncmpcpp
           - 
     - window_name: browser
       layout: tiled

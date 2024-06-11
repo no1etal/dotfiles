@@ -2,6 +2,7 @@
 
 source "$XDG_CONFIG_HOME/zsh/aliases"
 source "/home/kopachke/.gpt_api"
+source "/home/kopachke/.gemini.api"
 source "/home/kopachke/dotfiles/zsh/fzf"
 source "/home/kopachke/dotfiles/zsh/scripts.sh"
 
@@ -94,3 +95,6 @@ export PATH=$PATH:/home/kopachke/Apps
 
 # Added zoxide to zsh
 eval "$(zoxide init zsh)"
+
+# Added starship prompt
+eval "$(starship init zsh)"

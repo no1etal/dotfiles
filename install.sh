@@ -54,7 +54,7 @@ cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
 ########
 
 mkdir -p "/home/kopachke/.config/tmux"
-ln -sf "$DOTFILES/tmux/tmux.conf" "/home/kopachke/.config/tmux/tmux.conf"
+ln -sf "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
 
 #[ ! -d "~/.config/tmux/plugins" ] \     
 #&& git clone https://github.com/tmux-plugins/tpm \
@@ -75,7 +75,7 @@ ln -sf "$DOTFILES/X11/.xprofile" "$HOME"
 ##########
 
 mkdir -p "$XDG_CONFIG_HOME/ranger"
-rm -rf "$XDG_CONFIG_HOME/ranger/"
+rm -rf "$XDG_CONFIG_HOME/ranger"
 ln -s "$DOTFILES/ranger/" "$XDG_CONFIG_HOME"
 
 #########
@@ -169,28 +169,28 @@ ln -s "$DOTFILES/wofi" "$XDG_CONFIG_HOME"
 #mkdir -p "$XDG_CONFIG_HOME/zathura"
 
 rm -rf "$XDG_CONFIG_HOME/zathura"
-ln -s "$DOTFILES/zathura/" "$XDG_CONFIG_HOME/zathura"
+ln -s "$DOTFILES/zathura/" "$XDG_CONFIG_HOME"
 
 ################
 ### Castero ####
 ################
  
 rm -rf "$XDG_CONFIG_HOME/castero"
-ln -s "$DOTFILES/casterp" "$XDG_CONFIG_HOME/castero"
+ln -s "$DOTFILES/casterp" "$XDG_CONFIG_HOME"
 
 ################
 #### Zinger ####
 ################
 
 rm -rf "$XDG_CONFIG_HOME/zinger"
-ln -s "$DOTFILES/zinger" "$XDG_CONFIG_HOME/zinger"
+ln -s "$DOTFILES/zinger" "$XDG_CONFIG_HOME"
 
 ###############
 ### tmuxp #####
 ###############
 
 rm -rf "$XDG_CONFIG_HOME/tmuxp"
-ln -s "$DOTFILES/tmuxp" "$XDG_CONFIG_HOME/tmuxp"
+ln -s "$DOTFILES/tmuxp" "$XDG_CONFIG_HOME"
 
 ####################
 ### qutebrowser ####
@@ -205,5 +205,11 @@ ln -s "$DOTFILES/qutebrowser" "$XDG_CONFIG_HOME"
 ###################
 
 rm -rf "XDG_CONFIG_HOME/newsboat"
-ln -s "$DOTFILES/newsboat/" "$XDG_CONFIG_HOME/newsboat/"
+ln -s "$DOTFILES/newsboat/" "$XDG_CONFIG_HOME"
 
+###################
+### newsraft ######
+###################
+
+rm -rf "XDG_CONFIG_HOME/newsraft"
+ln -s "$DOTFILES/newsraft" "$XDG_CONFIG_HOME"
