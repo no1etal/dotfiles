@@ -95,7 +95,7 @@ ln -s "$DOTFILES/yazi" "$XDG_CONFIG_HOME"
 
 
 rm -rf "$XDG_CONFIG_HOME/kitty"
-ln -s "$DOTFILES/kitty/" "$XDG_CONFIG_HOME"
+ln -s "$DOTFILES/kitty" "$XDG_CONFIG_HOME"
  
 #########
 # hypr ##
@@ -129,8 +129,8 @@ ln -sf "$DOTFILES/btop" "$XDG_CONFIG_HOME"
 ########
 # mpd database and logs should be in ~/.local/share/mpd but I can't find it now. Maybe I deleted it?
 #
-#rm -rf "$XDG_CONFIG_HOME/mpd"
-#ln -s "$DOTFILES/mpd" "$XDG_CONFIG_HOME/mpd"
+rm -rf "$XDG_CONFIG_HOME/mpd"
+ln -s "$DOTFILES/mpd" "$XDG_CONFIG_HOME/mpd"
 #
 #
 #
@@ -150,8 +150,8 @@ ln -s "$DOTFILES/ncmpcpp" "$HOME"
 
 #mkdir -p "$XDG_CONFIG_HOME/waybar"
 
-rm -rf "XDG_CONFIG_HOME/waybar"
-ln -s "$DOTFILES/waybar/" "$XDG_CONFIG_HOME"
+#rm -rf "XDG_CONFIG_HOME/waybar"
+#ln -s "$DOTFILES/waybar/" "$XDG_CONFIG_HOME"
 
 ############
 #   wofi ###
@@ -205,7 +205,11 @@ ln -s "$DOTFILES/qutebrowser" "$XDG_CONFIG_HOME"
 ###################
 
 rm -rf "XDG_CONFIG_HOME/newsboat"
+<<<<<<< HEAD
 ln -s "$DOTFILES/newsboat/" "$XDG_CONFIG_HOME"
+=======
+ln -s "$DOTFILES/newsboat" "$XDG_CONFIG_HOME/newsboat"
+>>>>>>> 7a7113b46569dcbe8d45600d328d238ff8537d09
 
 ###################
 ### newsraft ######
