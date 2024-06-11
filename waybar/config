@@ -6,7 +6,7 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     "height": 30,
-    "modules-left": ["clock", "wallpaper", "idle_inhibitor", "hyprland/workspaces"],
+    "modules-left": ["clock", "custom/weather", "idle_inhibitor", "hyprland/workspaces"],
     //"modules-left": ["clock","hyprland/window"],
     "modules-center": [],
     "modules-right": ["temperature", "memory", "battery","network", "backlight", "pulseaudio", "bluetooth", "tray", "power-profiles-daemon"],
@@ -24,6 +24,14 @@
     "interval": 30,
     "format": "{}% ",
     "max-length": 10
+},
+
+"custom/weather": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 600,
+    "exec": "wttrbar",
+    "return-type": "json"
 },
 
     "power-profiles-daemon": {
