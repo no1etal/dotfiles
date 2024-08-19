@@ -24,8 +24,14 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git'"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # Web Browser
-#export BROSER="firefox"
+export BROWSER="firefox"
+
+# Command Line Browser
+export BROWSERCLI="w3m"
 
 # PATHS
-export PATH="/home/kopachke/.local/share:~/go/bin:$/home/kopachke/.local/bin:PATH"
+export PATH=$PATH:/home/kopachke/.spicetify
+export PATH=$PATH:/home/kopachke/.local/bin
+export PATH=$PATH:/home/kopachke/Apps
+export PATH=$PATH:/home/kopachke/go/bin/
 

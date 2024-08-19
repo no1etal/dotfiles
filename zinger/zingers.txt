@@ -243,5 +243,5 @@ In the end, the only way to make large groups of people do what they well and tr
 "When I was a boy of 14, my father was so ignorant I could hardly stand to have the old man around. But when I got to be 21, I was astonished at how much the old man had learned in seven years." ;; Mark Twain quote
 "I do not fear death. I had been dead for billions and billions of years before I was born, and had not suffered the slightest inconvenience from it." ;; Mark Twain quote
 
-
+Dorsey described algorithms as having an impact on free will, since while government and social media moderation policies can affect users’ ability to share their views, algorithms can subconsciously affect how people interpret and understand the world in the first place, and thus what views they end up having. ;; Jack Dorsey freedom algorythm
 

@@ -142,7 +142,7 @@ ln -s "$DOTFILES/mpd" "$XDG_CONFIG_HOME/mpd"
 #mkdir -p "$HOME/.ncmpcpp"
 
 rm -rf "$HOME/.ncmpcpp/"
-ln -s "$DOTFILES/ncmpcpp" "$HOME"
+ln -s "$DOTFILES/.ncmpcpp" "$HOME"
 
 ##############
 # waybar   ###
@@ -176,7 +176,7 @@ ln -s "$DOTFILES/zathura/" "$XDG_CONFIG_HOME"
 ################
  
 rm -rf "$XDG_CONFIG_HOME/castero"
-ln -s "$DOTFILES/casterp" "$XDG_CONFIG_HOME"
+ln -s "$DOTFILES/castero" "$XDG_CONFIG_HOME"
 
 ################
 #### Zinger ####
@@ -217,3 +217,10 @@ ln -s "$DOTFILES/newsboat" "$XDG_CONFIG_HOME/newsboat"
 
 rm -rf "XDG_CONFIG_HOME/newsraft"
 ln -s "$DOTFILES/newsraft" "$XDG_CONFIG_HOME"
+
+####################
+### starship #######
+####################
+
+rm -rf "XDG_CONFIG_HOME/starship.toml"
+ln -s "$DOTFILES/starship.toml" "$XDG_CONFIG_HOME"

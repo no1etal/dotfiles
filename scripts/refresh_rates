@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Define your monitor you can get it by typing hyprctl monitor
+MONITOR="eDP-1"
+
+
+CURRENT_RATE=$(hyprctl monitors | grep "$MONITOR" | grep -o '[0-9.]*Hz' | sed 's/Hz//')
+
+
+# Define your two refresh rates you want to toggle between
+RATE1="120.002998"
+RATE2="60.001999"
+
+
+if [ "$(echo $CURRENT_RATE | bc)" == "$(echo $RATE1 | bc)" ]; then
+  hyprctl keyword monitor $MONITOR,2880x1800@$RATE2,auto,2
+else
+  hyprctl keyword monitor $MONITOR,2880x1800@$RATE1,auto,2
+fi

@@ -9,86 +9,78 @@
     "modules-left": ["clock", "custom/weather", "idle_inhibitor", "hyprland/workspaces"],
     //"modules-left": ["clock","hyprland/window"],
     "modules-center": [],
-    "modules-right": ["temperature", "memory", "battery","network", "backlight", "pulseaudio", "bluetooth", "tray", "power-profiles-daemon"],
+    "modules-right": ["temperature", "memory", "battery", "network", "backlight", "pulseaudio", "bluetooth", "tray", "power-profiles-daemon"],
+    
     "hyprland/window": {
         "format": "{}"
     },
 
-"disk": {
-    "interval": 30,
-    "format": "{free}",
-    "path": "/"
-},
+    "disk": {
+        "interval": 30,
+        "format": "{free}",
+        "path": "/"
+    },
 
     "memory": {
-    "interval": 30,
-    "format": "{}% ",
-    "max-length": 10
-},
+        "interval": 30,
+        "format": "{}% ",
+        "max-length": 10
+    },
 
-"custom/weather": {
-    "format": "{}°",
-    "tooltip": true,
-    "interval": 600,
-    "exec": "wttrbar",
-    "return-type": "json"
-},
+    "custom/weather": {
+        "format": "{}°",
+        "tooltip": true,
+        "interval": 600,
+        "exec": "wttrbar",
+        "return-type": "json"
+    },
 
     "power-profiles-daemon": {
-  "format": "{icon}   {profile}",
-  "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-  "tooltip": true,
-  "format-icons": {
-    "default": "",
-    "performance": "",
-    "balanced": "",
-    "power-saver": ""
-  }
-},
+        "format": "{icon} {profile}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
+    },
 
- "hyprland/workspaces": {
-  "format": "{icon}",
-  "on-click": "activate",
-  "format-icons": {
-    "1": "",
-    "2": "",
-    "3": "",
-    "4": "",
-    "5": "",
-    "urgent": "",
-    "active": "",
-    "default": ""
-  },
-  "sort-by-number": true
-},  
-    "custom/power_profile":{
-      //shows the current power profile and switches to next on click
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "urgent": "",
+            "active": "",
+            "default": ""
+        },
+        "sort-by-number": true
+    },
+
+    "custom/power_profile": {
         "exec": "asusctl profile -p | sed s:'Active profile is'::",
         "interval": 30,
-        "format": "󰈐{}", 
+        "format": "󰈐{}",
         "on-click": "asusctl profile -n; pkill -SIGRTMIN+8 waybar",
         "signal": 8
     },
-
-    //"custom/weather" : {
-        //shows the current weather and forecast
-        // "tooltip" : true,
-        //"format" : "{}",
-        //"interval" : 30,
-        //"exec" : "~/.config/waybar/scripts/waybar-wttr.py",
-        //"return-type" : "json"
-    //},
 
     "tray": {
         "icon-size": 15,
         "spacing": 10
     },
 
-"clock": {
-		"format-alt": "{:%a, %d. %b  %H:%M}",
-    "on-click-right": "/home/kopachke/scripts/wallpaper/changeWallpaper2.sh"
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}",
+        "on-click-right": "/home/kopachke/scripts/wallpaper/changeWallpaper2.sh"
+    },
 
-	},
     "backlight": {
         "device": "intel_backlight",
         "format": "{icon} {percent}%",
@@ -111,15 +103,13 @@
 
     "network": {
         "interface": "wlp2s0", // (Optional) To force the use of this interface
-        "format-wifi": "  {signalStrength}%",
+        "format-wifi": " {signalStrength}%",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{essid} - {ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "⚠",
         "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
-    }
     },
-
 
     "pulseaudio": {
         "format": "{icon} {volume}%",
@@ -137,16 +127,15 @@
             "portable": "",
             "car": "",
             "default": ["", "", ""]
-            "on-click": mute
-        },
+        }
+    },
 
-  "idle_inhibitor": {
+    "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
             "activated": "",
             "deactivated": ""
         }
-
     },
 
     "pulseaudio#microphone": {
@@ -158,7 +147,7 @@
         "on-scroll-down": "pamixer --default-source -d 5",
         "scroll-step": 5
     },
-    
+
     "cava": {
         "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
         "framerate": 30,
@@ -176,27 +165,18 @@
         "waves": false,
         "noise_reduction": 0.77,
         "input_delay": 2,
-        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
         "actions": {
-                   "on-click-right": "mode"
-                   }
+            "on-click-right": "mode"
+        }
     },
 
-    //"temperature": {
-        //"thermal-zone": 1,
-        //"format": "{temperatureF}°F ",
-        //"critical-threshold": 80,
-        //"format-critical": "{temperatureC}°C "
-    //},
-
-
     "bluetooth": {
-	    "format": " {status}",
-	    "format-disabled": "", // an empty format will hide the module
-	    "format-connected": " {num_connections}",
-	    "tooltip-format": "{device_alias}",
-	    "tooltip-format-connected": " {device_enumerate}",
-	    "tooltip-format-enumerate-connected": "{device_alias}"
+        "format": " {status}",
+        "format-disabled": "", // an empty format will hide the module
+        "format-connected": " {num_connections}",
+        "tooltip-format": "{device_alias}",
+        "tooltip-format-connected": " {device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}"
     }
-}
 }

@@ -5,7 +5,7 @@ source "/home/kopachke/.gpt_api"
 source "/home/kopachke/.gemini.api"
 source "/home/kopachke/dotfiles/zsh/fzf"
 source "/home/kopachke/dotfiles/zsh/scripts.sh"
-
+source "$DOTFILES/zsh/.zshenv"
 
 # Autoload and source fzf-tab
 autoload -U compinit; compinit
@@ -13,15 +13,6 @@ source /home/kopachke/git/fzf-tab/fzf-tab.plugin.zsh
 
 # Enable AUTO_PARAM_SLASH
 setopt AUTO_PARAM_SLASH
-
-/home/kopachke/dotfiles/i3/scripts/print256colours.sh 
-
-echo
-
-neofetch
-
-echo "Hello Dragan. Shall we play a game?" 
-echo
 
 # Disable CASE_GLOB
 unsetopt CASE_GLOB
@@ -71,10 +62,6 @@ function ya() {
 }
 
 ########## EXPORT
-export PATH=$PATH:/home/kopachke/.spicetify
-export PATH=$PATH:/home/kopachke/.local/bin
-export PATH=$PATH:/home/kopachke/Apps
-
 ## >>> conda initialize >>>
 ## !! Contents within this block are managed by 'conda init' !!
 #__conda_setup="$('/usr/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -98,3 +85,15 @@ eval "$(zoxide init zsh)"
 
 # Added starship prompt
 eval "$(starship init zsh)"
+
+echo
+/home/kopachke/dotfiles/i3/scripts/print256colours.sh 
+echo
+echo
+fastfetch
+echo
+
+echo "Hello kopachke. Shall we play a game?" 
+echo
+
+

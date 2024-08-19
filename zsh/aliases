@@ -22,6 +22,11 @@ alias colors='curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f4
  alias cg="chatgpt" 
  alias i="chatgpt -i"
  alias g="/home/kopachke/go/bin/gemini"
+ alias l="ollama run llama3"
+ alias la="ollama run llama3:70b" #This is a larger model, cca. 40GB as opposed to 4.7GB
+ alias l8b="ollama run lamma3:8b"
+ alias lali="ollama run qwen2:7b-instruct-q8_0"
+ alias l7b="ollama run qwen2:7b-instruct-q8_0"
  alias class="xprop WM_CLASS"
  alias colors="/home/kopachke/dotfiles/i3/scripts/print256colours.sh"
  #alias ncmpcpp="/home/kopachke/scripts/music-server.sh"
@@ -158,7 +163,7 @@ alias nyk="$EDITOR $XDG_CONFIG_HOME/yazi/keymap.toml"
 alias nya="$EDITOR $XDG_CONFIG_HOME/yazi/yazi.toml"
 alias nyt="$EDITOR $XDG_CONFIG_HOME/yazi/theme.toml"
 
-alias nhyper="$EDITOR $XDG_CONFIG_HOME/hypr/hyprland.conf"
+alias nhypr="$EDITOR $XDG_CONFIG_HOME/hypr/hyprland.conf"
 alias nwaybar="$EDITOR $XDG_CONFIG_HOME/waybar/config"
 alias nwaybarstyle="$EDITOR $XDG_CONFIG_HOME/waybar/style.css"
 
@@ -184,6 +189,7 @@ alias personal='cp -Rf /personal/* ~'
 ###################################
 
 alias sozsh="source $DOTFILES/zsh/.zshrc"
+alias nenv="$EDITOR $DOTFILES/zsh/.zshenv"
 
 ##########################################
 ##### tmux #####################
@@ -202,3 +208,19 @@ alias mqnap="sshfs -p 50080 drigy@82.136.76.6:/ ~/hpsamba"
 
 alias cointop="TERM=screen-256color cointop"
 alias man="batman"
+alias nzinger="lvim $XDG_CONFIG_HOME/zinger/zingers.txt"
+
+# Setting up a monitor 
+alias monreset="hyprctl keyword monitor eDP-1, preferred, auto, 2"
+alias rate120="hyprctl keyword monitor eDP-1, higres@highrr, auto, 2"
+alias rate60="hyprctl keyword monitor eDP-1, 2880x1800@60, auto, 2"
+alias rate30="hyprctl keyword monitor eDP-1, 2880x1800@30, auto, 2"
+
+# Zoxide
+alias cd="z"
+
+# Git stuff
+alias bec="better-commits"
+
+# Apps
+alias telegram="flatpak run org.telegram.desktop"

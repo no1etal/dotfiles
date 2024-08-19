@@ -13,7 +13,7 @@ color-list-item-important bold red default
 bind ^P mark-unread-all
 
 # Command binding for opening links with feh image viewer.
-bind f exec feh "%l"
+bind f exec imv "%l"
 
 # This will launch mpv in the background.
 bind m exec mpv --no-terminal "%l" &
@@ -21,3 +21,7 @@ bind m exec mpv --no-terminal "%l" &
 # This will launch mpv interactively.
 bind M exec mpv "%l"
 
+# Open in cli browser
+bind e exec links "%l"
+
+bind E exec ${BROWSERCLI:-xdg-open} "%l"

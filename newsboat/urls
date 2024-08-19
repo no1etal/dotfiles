@@ -22,6 +22,9 @@ https://mnormandavies.substack.com/feed
 https://substack.com/@wublockchain/feed
 https://jarvislabs.substack.com/feed
 https://bitcoinstrategy.substack.com/feed
+----------------AI---------------------------
+https://erichartford.com/rss.xml
+http://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Ferichartford.com%2Frss.xml&max=200&links=preserve&exc=&submit=Create+Feed
 #
 -------------Geo Blog------------------------
 https://stavroulapabst.substack.com/feed #Stavroula Pabst is a writer, comedian, and media PhD student at the National and Kapodistrian University of Athens in Athens, Greece. Her writing has appeared in publications including Propaganda in Focus, Reductress, Unlimited Hangout and The Grayzone
@@ -41,6 +44,8 @@ https://www.lynalden.com/feed/
 ---------------Linux ------------------------
 https://www.kali.org/rss.xml
 https://proton.me/blog/feed
+https://smarttech101.com/feed/
+http://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Fsmarttech101.com%2Ffeed%2F&max=200&links=preserve&exc=&submit=Create+Feed
 #
 --------------Phylosophy---------------------
 https://neofeudalism.substack.com/feed
@@ -92,3 +97,4 @@ https://www.reddit.com/r/unixporn/.rss Reddit "~Unixporn" Tech
 ════════════════════════════════════════════════
 http://getpocket.com/users/drigy/feed/unread 
 # }}}
+https://newsboat.org/news.atom

@@ -1,0 +1,46 @@
+# externel browser
+browser "links %u"
+macro . set browser "/home/kopachke/bin/sauron %u"; open-in-browser ; set browser "links %u"
+macro / set browser "python3 -m readability.readability -u %u 2> /dev/null | w3m -T text/html"; open-in-browser ; set browser "w3m %u"
+macro l set browser "xdg-open %u"; open-in-browser ; set browser "links %u"
+macro p set browser "/home/djwilcox/bin/punch -i %u 2> /dev/null"; one; set browser "w3m %u"
+
+# urlscan
+external-url-viewer "urlscan"
+
+# html-renderer and pager
+#pager "w3m -T text/html"
+#html-renderer "w3m"
+
+# text width
+text-width 80
+
+# podboat
+download-path "~/Downloads/%n"
+player "mpv"
+
+# colours
+#color background         default default
+color listnormal         default default
+color listnormal_unread  default default
+color listfocus          default color93
+color listfocus_unread   default color93
+color info               black blue
+color article            default default
+
+# highlights
+#highlight article "^(Feed|Title|Link|Date|Author):.*$" color12 color8
+highlight article "https?://[^ ]+" color4 color93 protect
+
+# kill files ignore articles marked #shorts to filter out youtube shorts
+ignore-article "*" "title =~ \"#shorts$\""
+
+# Listfromat
+# date: %4d-%02m-%02y
+
+# After modification (without the date placeholder)
+# articlelist-format " %4i  %d  %t  %18L  %?u [%3C]  %s %?F&%B[%?K]"
+# auto-reload yes
+
+bind-key j down 
+bind-key k up

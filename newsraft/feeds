@@ -1,10 +1,11 @@
 https://musicforprogramming.net/rss.xml
-
 @World Affairs
 https://feeds.feedburner.com/zerohedge/feed "ZeroHedge"
 https://www.voltairenet.org/spip.php?page=backend&id_secteur=1110&lang=en "Voltaire"
 https://larrycjohnson.substack.com/feed "Larry Johnson"
 https://orientalreview.su/feed/  "Oriental Review"
+http://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Forientalreview.su%2Ffeed%2F&max=200&links=preserve&exc=&submit=Create+Feed "OR Full"
+http://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Fwww.voltairenet.org%2Fspip.php%3Fpage%3Dbackend%26id_secteur%3D1110%26lang%3Den&max=200&links=preserve&exc=&submit=Create+Feed "Voltaire Full"
 
 @OSINT
 https://bmanalysis.substack.com/feed "Black Mountain Analisys"
@@ -16,19 +17,43 @@ https://mnormandavies.substack.com/feed
 #
 #
 @Blockchain
+https://insights.glassnode.com/rss/
 https://substack.com/@wublockchain/feed
 https://jarvislabs.substack.com/feed "Jarvis"
 https://bitcoinstrategy.substack.com/feed  
+https://www.coindesk.com/arc/outboundfeeds/rss/ "CoinDesk"
+https://decrypt.co/feed "DeCrypt"
+https://cointelegraph.com/rss "Coin Telegraph"
+@AI
+http://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Ferichartford.com%2Frss.xml&max=200&links=preserve&exc=&submit=Create+Feed
+#
+@Blogs
+https://www.snapsbyfox.com/blog?format=rss
+https://thelinuxcast.org/feed/feed.xml
+https://gideonwolfe.com/index.xml "~Gideon Wolfe"
+https://lukesmith.xyz/rss.xml "Luke Smith"
+http://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Flukesmith.xyz%2Frss.xml+&max=200&links=preserve&exc=&submit=Create+Feed "Luke Smith Full"
+https://thevaluable.dev/index.xml
+http://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Fthevaluable.dev%2Findex.xml&max=200&links=preserve&exc=&submit=Create+Feed "The Valuable Dev Full"
+https://tux.pizza/feed.xml
+https://hexdsl.com/index.xml
+http://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Fhexdsl.com%2Findex.xml&max=200&links=preserve&exc=&submit=Create+Feed "HexDSL"
+#
 #
 @Geo Blog
 https://stavroulapabst.substack.com/feed #Stavroula Pabst is a writer, comedian, and media PhD student at the National and Kapodistrian University of Athens in Athens, Greece. Her writing has appeared in publications including Propaganda in Focus, Reductress, Unlimited Hangout and The Grayzone
 https://www.caitlinjohnst.one/feed "Caitlin Johstone"
 @Investing
+https://www.ft.com/cryptofinance?format=rss
+https://www.ft.com/stablecoins?format=rss
 https://www.lynalden.com/feed/ "Lyn Alden"
-
+https://cedarowl.substack.com/feed
 @Linux
 https://www.kali.org/rss.xml "Kali Linux"
 https://proton.me/blog/feed  "Proton"
+https://smarttech101.com/feed/
+@Home Lab
+https://nerdyarticles.com/rss/ "Self Hosting, New Technologies and general IT nerdy stuff"
 #
 @Philosophy
 https://neofeudalism.substack.com/feed  ""
@@ -43,17 +68,13 @@ https://www.mojblink.si/rss?passkey=6ae95e11593f03d61fb211abd5d2e87c&type=web
 @slo-torrent
 https://www.tornado.si/?p=forums&pid=11&action=rss&fid=5
 
+@Journalism
+https://jonathancook.substack.com/feed "Jonathan Cook"
+
 @MSM
 http://rss.cnn.com/rss/cnn_topstories.rss "CNN"
 https://www.politika.rs/rss/ 
-
-@Blogs
-https://www.snapsbyfox.com/blog?format=rss
-https://thelinuxcast.org/feed/feed.xml
-https://gideonwolfe.com/index.xml "~Gideon Wolfe"
-https://lukesmith.xyz/rss.xml Blog "~Luke Smith" Tech
-https://thevaluable.dev/index.xml
-https://tux.pizza/feed.xml
+http://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Fwww.politika.rs%2Frss%2F+&max=200&links=preserve&exc=&submit=Create+Feed "Politika"
 
 @Youtube
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA Youtube "~Luke Smith" Tech
@@ -73,3 +94,9 @@ https://www.reddit.com/r/linuxmemes/.rss Reddit "~Arch Linux memes" Entertainmen
 https://www.reddit.com/r/unixporn/.rss Reddit "~Unixporn" Tech
 http://getpocket.com/users/drigy/feed/unread 
 # }}}
+
+
+@Arch
+https://bbs.archlinux.org/extern.php?action=feed&tid=297004&type=atom "Issue with Update"
+https://bbs.archlinux.org/extern.php?action=feed&type=atom "Arch Forum"
+https://newsboat.org/news.atom

@@ -1,0 +1,1357 @@
+[1m[0m[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;11mmodified: btop/btop.conf
+[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[36m[1m[38;5;13m@ btop/btop.conf:60 @[0m[1m[38;5;146m update_ms = 1100[0m
+[m
+#* Processes sorting, "pid" "program" "arguments" "threads" "user" "memory" "cpu lazy" "cpu direct",[m
+#* "cpu lazy" sorts top process over time (easier to follow), "cpu direct" updates top process directly.[m
+[31mproc_sorting = "[7mmemory[27m"[m
+[32m[m[32mproc_sorting = "[7mcpu direct[27m"[m
+[m
+#* Reverse sorting order, True or False.[m
+proc_reversed = False[m
+[1m[0m[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;11mmodified: hypr/conf/binds.conf
+[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[36m[1m[38;5;13m@ hypr/conf/binds.conf:60 @[0m[1m[38;5;146m bind = $mainMod SHIFT, up, resizeactive, 0 -15[0m
+bind = $mainMod SHIFT, down, resizeactive, 0 -15[m
+[m
+bind = $mainMod, b, exec, bitwarden-desktop[m
+[32m[m[32mbind = $mainMod, n, exec, keepassxc[m
+bind = $mainMod, t, exec, tradingview[m
+bind = $mainMod, i, exec, /home/kopachke/Apps/Kotatogram/Kotatogram[m
+[m
+[1m[0m[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;11mmodified: hypr/hyprland.conf
+[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[36m[1m[38;5;13m@ hypr/hyprland.conf:26 @[0m[1m[38;5;146m monitor = HDMI-A-1, preferred,auto,1[0m
+[m
+# Set programs that you use[m
+$terminal = kitty[m
+[31m$fileManager = [7mnemo[27m[m
+[32m[m[32m$fileManager = [7mthunar[27m[m
+$menu = wofi --show drun[m
+[m
+# Some default env vars.[m
+env = XCURSOR_SIZE,24[m
+[31menv = QT_QPA_PLATFORMTHEME,qt[7m5[27mct # change to qt6ct if you have that[m
+[32m[m[32menv = QT_QPA_PLATFORMTHEME,qt[7m6[27mct # change to qt6ct if you have that[m
+[m
+# For all categories, see https://wiki.hyprland.org/Configuring/Variables/[m
+input {[m
+[36m[1m[38;5;13m@ hypr/hyprland.conf:49 @[0m[1m[38;5;146m input {[0m
+    touchpad {[m
+        natural_scroll = true[m
+        disable_while_typing = true[m
+[31m        scroll_factor = 0.[7m5[27m[m
+[32m[m[32m        scroll_factor = 0.[7m1777777[27m[m
+        tap-to-click = true[m
+    }[m
+[m
+[31m    sensitivity = 0[7m[27m # -1.0 - 1.0, 0 means no modification.[m
+[32m[m[32m    sensitivity = 0[7m.1[27m # -1.0 - 1.0, 0 means no modification.[m
+}[m
+[m
+general {[m
+[36m[1m[38;5;13m@ hypr/hyprland.conf:64 @[0m[1m[38;5;146m general {[0m
+    border_size = 2[m
+    col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg[m
+    col.inactive_border = rgba(595959aa)[m
+[31m  [7m[27m  cursor_inactive_timeout = 1[m
+[32m[m[32m  [7m#[27m  cursor_inactive_timeout = 1[m
+[m
+    layout = dwindle[m
+[m
+[36m[1m[38;5;13m@ hypr/hyprland.conf:105 @[0m[1m[38;5;146m animations {[0m
+    animation = borderangle, 1, 8, default[m
+    animation = fade, 1, 7, default[m
+    animation = workspaces, 1, 6, default[m
+[31m    animation=windows,1,8,default,popin 60%}[m
+[32m[m[32m    animation=windows,1,1,default,popin 80%[m
+[32m[m[32m    }[m
+ #   bezier=overshot,0.05,0.9,0.1,1.1[m
+[7m[31m [m
+[31m#########################################[m
+[31m#   __| |_      _(_)_ __   __| | | ___[m
+[31m# / _` \ \ /\ / / | '_ \ / _` | |/ _ \[m
+[31m#| (_| |\ V  V /| | | | | (_| | |  __/[m
+[31m# \__,_| \_/\_/ |_|_| |_|\__,_|_|\___|[m
+[31m#########################################[m
+[7m[31m [m
+[31m#bind = $mainMod, I, swapsplit, # dwindle[m
+[7m[31m [m
+[7m[31m [m
+[31m#dwindle {[m
+[31m#    # See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more[m
+[31m#    pseudotile = true # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below[m
+[31m#    preserve_split = true # you probably want this[m
+[31m#}[m
+[31m#[m
+[31m#master {[m
+[31m#    # See https://wiki.hyprland.org/Configuring/Master-Layout/ for more[m
+[31m#    new_is_master = true[m
+[31m#}[m
+[31m#[m
+[31m#gestures {[m
+[31m#    # See https://wiki.hyprland.org/Configuring/Variables/ for more[m
+[31m#    workspace_swipe = true[m
+[31m#    workspace_swipe_fingers = 3[m
+[31m#    workspace_swipe_distance = 200[m
+[31m#[m
+[31m#}[m
+[31m#[m
+[31m#misc {[m
+[31m#    # See https://wiki.hyprland.org/Configuring/Variables/ for more[m
+[31m#    force_default_wallpaper = 0 # Set to 0 or 1 to disable the anime mascot wallpapers[m
+[31m#    disable_hyprland_logo = true[m
+#[m
+[31m#    #cursor_zoom_factor = 2[m
+[31m#    #cursor_zoom_rigid = true[m
+[31m}[m
+[7m[31m [m
+[31m# Example per-device config[m
+[31m## See https://wiki.hyprland.org/Configuring/Keywords/#per-device-input-configs for more[m
+[31m#device:epic-mouse-v1 {[m
+[31m#    sensitivity = -0.5[m
+[31m#}[m
+[31m#[m
+[31m## Example windowrule v1[m
+[31m## windowrule = float, ^(kitty)$[m
+[31m## Example windowrule v2[m
+[31m## windowrulev2 = float,class:^(kitty)$,title:^(kitty)$[m
+[31m## See https://wiki.hyprland.org/Configuring/Window-Rules/ for more[m
+[31m#windowrulev2 = nomaximizerequest, class:.* # You'll probably like this.[m
+[31m#[m
+[31m############################################[m
+[31m# Autostart [m
+[31m############################################[m
+[31m#exec-once = waybar[m
+[31m#exec-once = protonvpn[m
+[7m[31m [m
+[7m[31m [m
+[31m# Launch script for monitor lid closed and switch[m
+[31m#bindl = , switch:Lid Switch, exec, ~/.config/hypr/switch.sh[m
+[7m[31m [m
+# Below are useful when you are connecting your laptop in external display[m
+# Suggest you edit below for your laptop display[m
+# From WIKI This is to disable laptop monitor when lid is closed.[m
+# consult https://wiki.hyprland.org/hyprland-wiki/pages/Configuring/Binds/#switches[m
+[31mbindl = , switch:off:Lid Switch,exec,hyprctl keyword monitor "eDP-1, preferred, auto, [7m1[27m"[m
+[32m[m[32mbindl = , switch:off:Lid Switch,exec,hyprctl keyword monitor "eDP-1, preferred, auto, [7m2[27m"[m
+bindl = , switch:on:Lid Switch,exec,hyprctl keyword monitor "eDP-1, disable"[m
+#[m
+#[m
+[36m[1m[38;5;13m@ hypr/hyprland.conf:132 @[0m[1m[38;5;146m windowrulev2 = bordercolor rgb(FF0000),title:^(.*Tradingview.*)$ # set bordercol[0m
+windowrulev2 = bordercolor rgb(00FF00),title:^(.*chatgpt.*)$ # set bordercolor to green when title contains chatgpt[m
+windowrule = opacity 0.9 override 0.8 override,^(kitty)$ # set opacity to 1.0 active and 0.7 inactive for kitty[m
+windowrule = opacity 1 override 0.97 override,^(firefox)$ # set opacity to 1.0 active and 0.9 inactive for firefox[m
+[32m[m[32mwindowrule = opacity 1 override 0.90 override,^(Logseq)$ # set opacity to 1.0 active and 0.9 inactive for firefox[m
+windowrule = float, ^(Bitwarden)$[m
+windowrule = float, ^(waypaper)$[m
+[7m[31m [m
+[32m[m[32mwindowrule = float, ^(keepassxc)$[m
+[32m[m[32m#windowrule = rounding 10,^(kitty)$ # set rounding to 10 for kitty[m
+[m
+[m
+[m
+[36m[1m[38;5;13m@ hypr/hyprland.conf:144 @[0m[1m[38;5;146m windowrule = float, ^(waypaper)$[0m
+#[m
+################################################################################################################################[m
+[m
+[31m#windowrule = rounding 10,^(kitty)$ # set rounding to 10 for kitty[m
+[7m[32m [m
+[32m[m[32msource = /home/kopachke/dotfiles/hypr/conf/autostart.conf[m
+[32m[m[32msource = /home/kopachke/dotfiles/hypr/conf/binds.conf[m
+[m
+# Animations[m
+#bezier=overshot,0.05,0.9,0.1,1.1[m
+[31m#animation=windows,1,[7m8[27m,default,popin 80%[m
+[32m[m[32m#animation=windows,1,[7m3[27m,default,popin 80%[m
+[m
+# Scripts[m
+[m
+[36m[1m[38;5;13m@ hypr/hyprland.conf:170 @[0m[1m[38;5;146m bind = $mainMod SHIFT, RETURN, exec, cool-retro-term[0m
+########## SOURCING ##############[m
+##################################[m
+[m
+[31msource = /home/kopachke/dotfiles/hypr/conf/autostart.conf[m
+[31msource = /home/kopachke/dotfiles/hypr/conf/binds.conf[m
+[7m[31m [m
+[31m## See https://wiki.hyprland.org/Configuring/Monitors/[m
+[31m#monitor=,preferred,0x0,auto[m
+[31m#[m
+[31m#[m
+[31m#[m
+[31m## startup[m
+[31m#exec-once = waybar[m
+[31m#exec-once = mako[m
+[31m#exec-once = swww init[m
+[31m#exec-once = swayosd[m
+[31m#exec-once = /home/luna/execautables/makima[m
+[31m#exec-once = swayosd-server[m
+[31m#exec-once = flameshot[m
+[31m#exec-once = hyprpm reload -n[m
+[31m#exec-once = wl-paste --watch cliphist store[m
+[31m#exec-once = polkit-kde-agent[m
+[31m#[m
+[31m#[m
+[31m#[m
+[31m#exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP # for XDPH[m
+[31m#exec-once = dbus-update-activation-environment --systemd --all # for XDPH[m
+[31m#exec-once = systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP QT_QPA_PLATFORMTHEME[m
+[31m##exec-once = dbus-update-activation-environment --systemd --all[m
+[31m##exec-once = systemctl --user import-environment QT_QPA_PLATFORMTHEME[m
+[31m#[m
+[31m#plugin {[m
+[31m#    hyprbars {[m
+[31m#        bar_height = 20[m
+[31m#        bar_text_align = left[m
+[31m#        bar_part_of_window = true[m
+[31m#        bar_precedence_over_border = false[m
+[31m#        bar_text_size = 10[m
+[31m#        bar_padding = 7[m
+[31m#    [m
+[31m#    }[m
+[31m#}[m
+[31m#[m
+[31m## Source a file (multi-file configs)[m
+[31m## source = ~/.config/hypr/myColors.conf[m
+[31m#[m
+## Some default env vars.[m
+#env = XCURSOR_SIZE, 24[m
+#[m
+[36m[1m[38;5;13m@ hypr/hyprland.conf:187 @[0m[1m[38;5;146m source = /home/kopachke/dotfiles/hypr/conf/binds.conf[0m
+#[m
+#env = QT_AUTO_SCREEN_SCALE_FACTOR,1[m
+#[m
+[31m[7m#[27menv = QT_STYLE_OVERRIDE,kvantum[m
+[32m[m[32m[7m[27menv = QT_STYLE_OVERRIDE,kvantum[m
+#[m
+[31m[7m#[27menv = QT_WAYLAND_DISABLE_WINDOWDECORATION,0[m
+[32m[m[32m[7m[27menv = QT_WAYLAND_DISABLE_WINDOWDECORATION,0[m
+#[m
+#env = QT_AUTO_SCREEN_SCALE_FACTOR,1[m
+#[m
+#env = MOZ_ENABLE_WAYLAND,1[m
+#[m
+[31m#[m
+[31m## For all categories, see https://wiki.hyprland.org/Configuring/Variables/[m
+[31m#[m
+[31m#input {[m
+[31m#    kb_layout = us[m
+[31m#    kb_variant =[m
+[31m#    kb_model =[m
+[31m#    kb_options =[m
+[31m#    kb_rules =[m
+[31m#[m
+[31m#    follow_mouse = 1[m
+[31m#[m
+[31m#    touchpad {[m
+[31m#        natural_scroll = no[m
+[31m#    }[m
+[31m#[m
+[31m#    sensitivity = 0 # -1.0 - 1.0, 0 means no modification.[m
+[31m#}[m
+[31m#[m
+[31m#general {[m
+[31m#    # See https://wiki.hyprland.org/Configuring/Variables/ for more[m
+[31m#[m
+[31m#    gaps_in = 5[m
+[31m#    gaps_out = 20[m
+[31m#    border_size = 2[m
+[31m#    col.active_border = rgba(8bd5caff) rgba(91d7e3ff) rgba(7dc4e4ff) rgba(7dc4e4ff) rgba(c6a0f6ff) rgba(f5bde6ff) rgba(ee99a0ff) rgba(ed8796ff) 45deg[m
+[31m#    #col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg[m
+[31m#    col.inactive_border = rgba(a6adc8ff)[m
+[31m#[m
+[31m#    layout = dwindle[m
+[31m#}[m
+[31m#[m
+#decoration {[m
+#    # See https://wiki.hyprland.org/Configuring/Variables/ for more[m
+#[m
+[36m[1m[38;5;13m@ hypr/hyprland.conf:225 @[0m[1m[38;5;146m source = /home/kopachke/dotfiles/hypr/conf/binds.conf[0m
+#    animation = workspaces, 1, 6, default[m
+#}[m
+#[m
+[31m[7m#[27mdwindle {[m
+[32m[m[32m[7m[27mdwindle {[m
+#    # See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more[m
+#    pseudotile = yes # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below[m
+[31m[7m#[27m    preserve_split = yes # you probably want this[m
+[31m[7m#[27m}[m
+[32m[m[32m[7m[27m    preserve_split = yes # you probably want this[m
+[32m[m[32m[7m[27m}[m
+#[m
+#master {[m
+#    # See https://wiki.hyprland.org/Configuring/Master-Layout/ for more[m
+[36m[1m[38;5;13m@ hypr/hyprland.conf:259 @[0m[1m[38;5;146m source = /home/kopachke/dotfiles/hypr/conf/binds.conf[0m
+#$mainMod = SUPER[m
+#[m
+## Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more[m
+[31m#bind = ALT, SPACE, exec, ulauncher[m
+[31m#bind = $mainMod, RETURN, exec, kitty[m
+[31m#[m
+[31m#[m
+[31m#bind = $mainMod, BACKSLASH, exec, firefox[m
+[31m#bind = $mainMod SHIFT, BACKSLASH, exec, xdg-open "x-junction:"[m
+[31m#[m
+[31m#[m
+[31m#bind = $mainMod, V, exec, code[m
+[32m[m[32mbind = ALT, SPACE, exec, ulauncher[m
+#[m
+[31m#bind = $mainMod, O, exec, obsidian[m
+[31m#bind = $mainMod, A, exec, amberol[m
+[31m#bind = $mainMod, T, exec, tubeconverter[m
+[31m#bind = $mainMod, C, exec, cider[m
+[31m#bind = $mainMod, K, exec, komikku[m
+[31m#bind = $mainMod, H, exec, heroic[m
+[31m#bind = $mainMod, P, exec, prusaslicer[m
+[31m#bind = $mainMod, S, exec, steam[m
+[31m#bind = $mainMod, BRACKETRIGHT, exec, discord[m
+[31m#bind = $mainMod, f6, exec, [m
+[31m#bind = $mainMod, f6, exec, hyprshot -m region[m
+[31m#bind = ALT,tab,hycov:toggleoverview[m
+[31m#[m
+[31m#[m
+[31m#bind = $mainMod, Q, killactive, [m
+[31m#bind = $mainMod SHIFT, M, exec, kitty, wlogout, [m
+[32m[m[32mbind = $mainMod SHIFT, M, exec, kitty, wlogout,[m[41m [m
+#bind = $mainMod, L, exec, swaylock [m
+[31m#bind = $mainMod, E, exec, nautilus[m
+[31m#bind = $mainMod SHIFT, E, exec, dolphin[m
+[31m#bind = $mainMod, F2, togglefloating, [m
+[31m#bind = $mainMod, D, exec, ~/.config/rofi/launchers/type-7/launcher.sh[m
+[31m#bind = $mainMod, F3, pseudo, # dwindle[m
+[31m#bind = $mainMod, F4, togglesplit, # dwindle[m
+[31m#[m
+[31m## Move ocus with mainMod + arrow keys[m
+[31m#bind = $mainMod, left, movefocus, l[m
+[31m#bind = $mainMod, right, movefocus, r[m
+[31m#bind = $mainMod, up, movefocus, u[m
+[31m#bind = $mainMod, down, movefocus, d[m
+[31m#[m
+[31m## Switch workspaces with mainMod + [0-9][m
+[31m#bind = $mainMod, 1, workspace, 1[m
+[31m#bind = $mainMod, 2, workspace, 2[m
+[31m#bind = $mainMod, 3, workspace, 3[m
+[31m#bind = $mainMod, 4, workspace, 4[m
+[31m#bind = $mainMod, 5, workspace, 5[m
+[31m#bind = $mainMod, 6, workspace, 6[m
+[31m#bind = $mainMod, 7, workspace, 7[m
+[31m#bind = $mainMod, 8, workspace, 8[m
+[31m#bind = $mainMod, 9, workspace, 9[m
+[31m#bind = $mainMod, 0, workspace, 10[m
+[31m#[m
+[31m## Move active window to a workspace with mainMod + SHIFT + [0-9][m
+[31m#bind = $mainMod SHIFT, 1, movetoworkspace, 1[m
+[31m#bind = $mainMod SHIFT, 2, movetoworkspace, 2[m
+[31m#bind = $mainMod SHIFT, 3, movetoworkspace, 3[m
+[31m#bind = $mainMod SHIFT, 4, movetoworkspace, 4[m
+[31m#bind = $mainMod SHIFT, 5, movetoworkspace, 5[m
+[31m#bind = $mainMod SHIFT, 6, movetoworkspace, 6[m
+[31m#bind = $mainMod SHIFT, 7, movetoworkspace, 7[m
+[31m#bind = $mainMod SHIFT, 8, movetoworkspace, 8[m
+[31m#bind = $mainMod SHIFT, 9, movetoworkspace, 9[m
+[31m#bind = $mainMod SHIFT, 0, movetoworkspace, 10[m
+[32m[m[32mbind = $mainMod, u, togglesplit, # dwindle[m
+#[m
+## Scroll through existing workspaces with mainMod + scroll[m
+#bind = $mainMod, mouse_down, workspace, e+1[m
+#bind = $mainMod, mouse_up, workspace, e-1[m
+[31m#[m
+[31m## Move/resize windows with mainMod + LMB/RMB and dragging[m
+[31m#bindm = $mainMod, mouse:272, movewindow[m
+[31m#bindm = $mainMod SHIFT, mouse:272, resizewindow[m
+[31m#[m
+[31m## Volume controls[m
+[31m#bind = , xf86audioraisevolume, exec, pactl set-sink-volume @DEFAULT_SINK@ +5% [m
+[31m#bind = , xf86audiolowervolume, exec, pactl set-sink-volume @DEFAULT_SINK@ -5% [m
+[31m#[m
+[31m#[m
+[31m## xwayland junk[m
+[31m#xwayland {[m
+[31m#  force_zero_scaling = true[m
+[31m#}[m
+[31m#[m
+[31m## float[m
+[31m#windowrule = float, gjs[m
+[31m#[m
+[31m##shimeji [m
+[31m##windowrule=float, com-group_finity-mascot-Main[m
+[31m##windowrule=noblur, com-group_finity-mascot-Main[m
+[31m##windowrule=nofocus, com-group_finity-mascot-Mainwindowrule=noshadow, com-group_finity-mascot-Main[m
+[31m##windowrule=noborder, com-group_finity-mascot-Main[m
+[1m[0m[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;11mmodified: install.sh
+[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[36m[1m[38;5;13m@ install.sh:145 @[0m[1m[38;5;146m ln -s "$DOTFILES/mpd" "$XDG_CONFIG_HOME/mpd"[0m
+#mkdir -p "$HOME/.ncmpcpp"[m
+[m
+rm -rf "$HOME/.ncmpcpp/"[m
+[31mln -s "$DOTFILES/[7m[27mncmpcpp" "$HOME"[m
+[32m[m[32mln -s "$DOTFILES/[7m.[27mncmpcpp" "$HOME"[m
+[m
+##############[m
+# waybar   ###[m
+[36m[1m[38;5;13m@ install.sh:179 @[0m[1m[38;5;146m ln -s "$DOTFILES/zathura/" "$XDG_CONFIG_HOME"[0m
+################[m
+ [m
+rm -rf "$XDG_CONFIG_HOME/castero"[m
+[31mln -s "$DOTFILES/caster[7mp[27m" "$XDG_CONFIG_HOME"[m
+[32m[m[32mln -s "$DOTFILES/caster[7mo[27m" "$XDG_CONFIG_HOME"[m
+[m
+################[m
+#### Zinger ####[m
+[36m[1m[38;5;13m@ install.sh:220 @[0m[1m[38;5;146m ln -s "$DOTFILES/newsboat" "$XDG_CONFIG_HOME/newsboat"[0m
+[m
+rm -rf "XDG_CONFIG_HOME/newsraft"[m
+ln -s "$DOTFILES/newsraft" "$XDG_CONFIG_HOME"[m
+[7m[32m [m
+[32m[m[32m####################[m
+[32m[m[32m### starship #######[m
+[32m[m[32m####################[m
+[7m[32m [m
+[32m[m[32mrm -rf "XDG_CONFIG_HOME/starship.toml"[m
+[32m[m[32mln -s "$DOTFILES/starship.toml" "$XDG_CONFIG_HOME"[m
+[1m─────────────────────────────────────────────────────────────────────────────────[0m
+[1mmodified: mpd/mpd.db (binary)
+[1m─────────────────────────────────────────────────────────────────────────────────[0m
+[1m[0m[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;11mmodified: newsboat/config
+[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[36m[1m[38;5;13m@ newsboat/config:4 @[0m[0m
+[31m# externel browser[m
+[31mbrowser "links %u"[m
+[31mmacro . set browser "/home/kopachke/bin/sauron %u"; open-in-browser ; set browser "links %u"[m
+[31mmacro / set browser "python3 -m readability.readability -u %u 2> /dev/null | w3m -T text/html"; open-in-browser ; set browser "w3m %u"[m
+[31mmacro l set browser "xdg-open %u"; open-in-browser ; set browser "links %u"[m
+[31mmacro p set browser "/home/djwilcox/bin/punch -i %u 2> /dev/null"; one; set browser "w3m %u"[m
+[32m[m[32m#                          _                 _[m[41m   [m
+[32m[m[32m#  _ __   _____      _____| |__   ___   __ _| |_[m[41m [m
+[32m[m[32m# | '_ \ / _ \ \ /\ / / __| '_ \ / _ \ / _` | __|[m
+[32m[m[32m# | | | |  __/\ V  V /\__ \ |_) | (_) | (_| | |_[m[41m [m
+[32m[m[32m# |_| |_|\___| \_/\_/ |___/_.__/ \___/ \__,_|\__|[m
+[32m[m[32m#[m[41m                                          [m
+[32m[m[32m# DESC: Configuration and Themes for Newsboat[m
+[32m[m[32m# http://www.youtube.com/user/gotbletu[m
+[32m[m[32m# https://twitter.com/gotbletu[m
+[32m[m[32m# https://github.com/gotbletu[m
+[32m[m[32m# gotbletu@gmail.com[m
+[m
+[31m# urlscan[m
+[31mexternal-url-viewer "urlscan"[m
+[32m[m[32m#-------- settings {{{[m
+[32m[m[32m#------------------------------------------------------[m
+[32m[m[32m# http://blog.sanctum.geek.nz/rss-with-newsbeuter/[m
+[32m[m[32m#[m
+[32m[m[32m#[m
+[32m[m[41m [m
+[m
+[31m# html-renderer and pager[m
+[31m#pager "w3m -T text/html"[m
+[31m#html-renderer "w3m"[m
+[m
+[31m# [7mtext width[27m[m
+[32m[m[32m# [7mSet the text width for better readability in article view[27m[m
+text-width 80[m
+[m
+[31m# podboat[m
+[31mdownload-path "~/Downloads/%n"[m
+[31mplayer "mpv"[m
+[32m[m[32mauto-reload yes                     # auto reload or use crontab instead ( 0 */2 * * * /usr/bin/newsboat -x reload )[m
+[32m[m[32mreload-time 150                     # update all feeds every x minutes[m
+[32m[m[32mreload-threads 4                    # parallel[m
+[32m[m[32mreload-only-visible-feeds yes       # manually reloading all feeds will only reload the currently visible feeds[m
+[32m[m[32msuppress-first-reload yes           # do not reload feeds on first startup[m
+[32m[m[32mscrolloff 10                        # keep cursor above and below set line[m
+[32m[m[32mmark-as-read-on-hover no[m
+[32m[m[32mnotify-beep yes[m
+[32m[m[32m# user-agent "Liferea/1.4.14 (Linux; en_US.UTF8; http://liferea.sf.net/)"[m
+[32m[m[32m# article-sort-order  date-desc[m
+[32m[m[32m# feed-sort-order firsttag[m
+[32m[m[32mconfirm-exit no[m
+[32m[m[32mbrowser ~/scripts/urlportal[m
+[32m[m[32m# download-full-page yes		# for feeds with link only then dl full page[m
+[32m[m[32mdownload-retries 4[m
+[32m[m[32mdownload-timeout 120[m
+[32m[m[32m# delete-read-articles-on-quit yes[m
+[32m[m[32m#keep-articles-days 120[m
+[32m[m[32mprepopulate-query-feeds yes[m
+[32m[m[32msave-path ~/.newsboat/saved_articles[m
+[32m[m[32mcleanup-on-quit yes[m
+[m
+[31m# [7mcolour[27ms[m
+[31m#[7mcolor background         default default[27m[m
+[31mcolor listnormal         default default[m
+[31mcolor listnormal_unread  default default[m
+[31mcolor listfocus          default color93[m
+[31mcolor listfocus_unread   default color93[m
+[31mcolor info               black blue[m
+[31mcolor article            default default[m
+[32m[m[32m# [7mhttps://newsbeuter.org/doc/newsbeuter.html#_format_string[27ms[m
+[32m[m[32m#[7m Your feeds (Table 6)[27m[m
+[32m[m[32m# feedlist-format " %n %4i %11u %t -- %T"[m
+[32m[m[32mfeedlist-format " %n %4i %13u %t -- %T"[m
+[32m[m[32m# Articles in feed (Table 7)[m
+[32m[m[32m articlelist-format  "%4 %f %D   %?T?|%-17T|  ?%t"[m
+[32m[m[32m#articlelist-format  "%4i %f %D  %?T?|%-17T|  ?%t"[m
+[32m[m[32m# notify-format       "%d new articles (%n unread articles, %f unread feeds)"[m
+[m
+[31m# highlights[m
+[31m#highlight article "^(Feed|Title|Link|Date|Author):.*$" color12 color8[m
+[31mhighlight article "https?://[^ ]+" color4 color93 protect[m
+[32m[m[32mdatetime-format "%b %d %Y" # date example: Mar 01 2017[m
+[7m[32m [m
+[32m[m[32mshow-read-feeds yes[m
+[32m[m[32mshow-read-articles yes[m
+[7m[32m [m
+[32m[m[32m#notify-program      "/usr/bin/notify-send"[m
+[32m[m[32m#goto-next-feed no[m
+[32m[m[32m#max-items 500[m
+[32m[m[32m#refresh-on-startup no[m
+[32m[m[32m#text-width 72[m
+[32m[m[32m#}}}[m
+[32m[m[32m#-------- podboat (podcast downloader) {{{[m
+[32m[m[32m#------------------------------------------------------[m
+[32m[m[32mdownload-path		"~/Downloads/%n"[m
+[32m[m[32mmax-downloads		2[m
+[32m[m[32m# player			"$PLAYER"[m
+[32m[m[32m#player			"xdg-open"[m
+[32m[m[32m player			"$URLPORTAL"[m
+[m
+[31m# kill files ignore articles marked #shorts to filter out youtube shorts[m
+[31mignore-article "*" "title =~ \"#shorts$\""[m
+[32m[m[32m# send any links to queue in URL view[m
+[32m[m[32m# http://www.newsbeuter.org/doc/newsbeuter.html#_macro_support[m
+[32m[m[32m#macro E set browser "echo %u >> ~/.newsbeuter/queue" ; open ; set browser "w3m %u"[m
+[32m[m[32m# }}}[m
+[32m[m[32m#-------- bookmarks {{{[m
+[32m[m[32m#------------------------------------------------------[m
+[32m[m[32m# source: https://newsbeuter.wordpress.com/2007/08/27/bookmarking/[m
+[m
+[31m# Listfromat[m
+[31m# date: %4d-%02m-%02y[m
+[32m[m[32m# bookmark-cmd "~/.scripts/newsbeuter_bookmarks_surfraw.sh"[m
+[32m[m[32m# bookmark-interactive yes[m
+[32m[m[32m# bookmark-autopilot yes[m
+[m
+[31m# After modification (without the date placeholder)[m
+[31m# articlelist-format " %4i  %d  %t  %18L  %?u [%3C]  %s %?F&%B[%?K]"[m
+[31m# auto-reload yes[m
+[m
+[31mbind-key j down [m
+[32m[m[32m# }}}[m
+[32m[m[32m#-------- podboat hotkey {{{[m
+[32m[m[32m#------------------------------------------------------[m
+[7m[32m [m
+[32m[m[32m# vim like navigation (right hand jutsu)[m
+[32m[m[32mbind-key b pb-toggle-download-all[m
+[32m[m[32mbind-key M pb-mark-as-finished[m
+[32m[m[32m#}}}[m
+[32m[m[32m#-------- newsboat hotkey {{{[m
+[32m[m[32m#------------------------------------------------------[m
+[7m[32m [m
+[32m[m[32m# vim like navigation (right hand jutsu)[m
+[32m[m[32mbind-key j down[m
+bind-key k up[m
+[32m[m[32munbind-key l[m
+[32m[m[32mbind-key l open[m
+[32m[m[32mbind-key h quit[m
+[32m[m[32mbind-key Esc quit[m
+[32m[m[32mbind-key Q quit[m
+[32m[m[32mbind-key ^q hard-quit[m
+[32m[m[32mbind-key m toggle-show-read-feeds[m
+[32m[m[32mbind-key ^D pagedown[m
+[32m[m[32mbind-key ^U pageup[m
+[32m[m[32m# bind-key / open-search tagselection[m
+[32m[m[32m# bind-key / open-search[m
+[32m[m[32mbind-key g home all[m
+[32m[m[32mbind-key G end all[m
+[7m[32m [m
+[32m[m[32m# FPS style navigation (left hand jutsu)[m
+[32m[m[32m# bind-key x save     # rebind save[m
+[32m[m[32m# unbind-key s        # unbind save[m
+[32m[m[32m# bind-key s down[m
+[32m[m[32m# bind-key w up all[m
+[32m[m[32m# bind-key d open[m
+[32m[m[32m# bind-key a quit[m
+[7m[32m [m
+[32m[m[32mbind-key i sort[m
+[32m[m[32mbind-key I rev-sort[m
+[32m[m[32mbind-key a toggle-article-read[m
+[32m[m[32mbind-key w toggle-source-view[m
+[7m[32m [m
+[32m[m[32m# bind-key b bookmark   # (default: ^B)[m
+[7m[32m [m
+[7m[32m [m
+[7m[32m [m
+[32m[m[32m#}}}[m
+[32m[m[32m#-------- macros {{{[m
+[32m[m[32m#------------------------------------------------------[m
+[32m[m[32m# Note: macro prefix key ( default: , )[m
+[7m[32m [m
+[32m[m[32m# open in cli web browser[m
+[32m[m[32m# w3m: https://www.youtube.com/watch?v=Z22cFTB-uqg[m
+[32m[m[32m# tmux: https://www.youtube.com/watch?v=ZNM1KfqpyGo[m
+[32m[m[32m# macro o set browser "$BROWSERCLI %u"; open-in-browser ; set browser "$BROWSERCLI %u"[m
+[32m[m[32m# Note: some links with ? in url doesnt open, not sure how to escape it directly ATM[m
+[7m[32m [m
+[32m[m[32m macro o set browser "tmux split-window && tmux send-keys '$BROWSERCLI %u && tmux kill-pane\n'"; open-in-browser-and-mark-read ; set browser "$BROWSER %u"[m
+[32m[m[32m#macro o set browser "tmux split-window -p 80 && tmux send-keys '$BROWSERCLI %u && tmux kill-pane\n'"; open-in-browser ; set browser "$URLPORTAL %u"[m
+[32m[m[32mmacro z set browser "tmux split-window -p 80 && tmux send-keys '$BROWSERCLI_IMAGE %u && tmux kill-pane\n'"; open-in-browser ; set browser "$URLPORTAL %u"[m
+[7m[32m [m
+[32m[m[32mmacro b set browser "tmux split-window -p 80 && tmux send-keys 'browsh -startup-url %u && tmux kill-pane\n'"; open-in-browser ; set browser "$URLPORTAL %u"[m
+[7m[32m [m
+[32m[m[32m# open in gui browser[m
+[32m[m[32m# macro ] set browser "$BROWSER"; open-in-browser ; set browser "$BROWSER %u"[m
+[32m[m[32mmacro w set browser "$BROWSER"; open-in-browser ; set browser "$URLPORTAL %u"[m
+[32m[m[32mmacro n set browser "$BROWSER_PRIVATE"; open-in-browser ; set browser "$URLPORTAL %u"[m
+[7m[32m [m
+[32m[m[32m# read reddit comments with rtv (reddit terminal viewer)[m
+[32m[m[32m# rtv: https://www.youtube.com/watch?v=jc2ZVSof5-g[m
+[32m[m[32m# macro r set browser "rtv -l %u"; open-in-browser ; set browser "$BROWSER %u"[m
+[32m[m[32mmacro r set browser "tmux split-window -p 80 && tmux send-keys 'rtv -l %u && tmux kill-pane\n'"; open-in-browser ; set browser "$URLPORTAL %u"[m
+[7m[32m [m
+[32m[m[32m# readability[m
+[32m[m[32m# macro [ set browser "tmux split-window -p 80 && tmux send-keys 'w3m http://justread.mpgarate.com/read?url=%u && tmux kill-pane\n'"; open-in-browser ; set browser "$BROWSER %u"[m
+[7m[32m [m
+[32m[m[32m# add video or audio to play queue using mpv (requires: task-spooler, mpv, youtube-dl)[m
+[32m[m[32m# task-spooler: https://www.youtube.com/watch?v=wv8D8wT20ZY[m
+[32m[m[32m# youtube-dl: https://www.youtube.com/watch?v=MFxlwVhwayg[m
+[32m[m[32mmacro p set browser "tsp mpv --ontop --no-border --force-window --autofit=500x280 --geometry=-15-60 %u"; open-in-browser ; set browser "$URLPORTAL %u"[m
+[32m[m[32mmacro l set browser "tsp mpv --ontop --no-border --force-window --autofit=500x280 --geometry=-1920-50 %u"; open-in-browser ; set browser "$URLPORTAL %u"[m
+[32m[m[32m# macro p set browser "tsp mpv --ontop --no-border --force-window --autofit=500x280 --geometry=-15-10 %u"; open-in-browser-and-mark-read ; set browser "$BROWSER %u"[m
+[7m[32m [m
+[32m[m[32m# read saved files[m
+[32m[m[32m# ranger: https://www.youtube.com/watch?v=qooLR8NmYKs[m
+[32m[m[32m# w3m context url: https://www.youtube.com/watch?v=C7YPjbrTeCs[m
+[32m[m[32mmacro s set browser "tmux split-window && tmux send-keys 'ranger ~/.newsboat/saved_articles && tmux kill-pane\n'" ; open-in-browser ; set browser "$URLPORTAL %u"[m
+[7m[32m [m
+[32m[m[32m# copy url to clipboard "yank" (via xclip)[m
+[32m[m[32m# xclip: https://www.youtube.com/watch?v=fKP0FLp3uW0[m
+[32m[m[32mmacro x set browser "echo -n %u | xclip -selection clipboard" ; open-in-browser ; set browser "$URLPORTAL %u"[m
+[7m[32m [m
+[32m[m[32m# copy url to clipboard "yank" (via tmux clipboard)[m
+[32m[m[32mmacro y set browser "tmux set-buffer %u" ; open-in-browser ; set browser "$URLPORTAL %u"[m
+[7m[32m [m
+[32m[m[32m# add torrents or magnet links to client[m
+[32m[m[32mmacro t set browser "$HOME/.scripts/shellscripts/torrentportal %u"; open-in-browser ; set browser "$URLPORTAL %u"[m
+[7m[32m [m
+[32m[m[32m# read or post youtube comments (via youtube-viewer)[m
+[32m[m[32mmacro c set browser "tmux set-buffer %u && tmux split-window -p 80 && tmux send-keys 'youtube-viewer --comments=$(tmux show-buffer) && tmux kill-pane\n'"; open-in-browser ; set browser "$URLPORTAL %u"[m
+[7m[32m [m
+[32m[m[32m# display youtube video description (via youtube-viewer)[m
+[32m[m[32mmacro i set browser "tmux set-buffer %u && tmux split-window -p 80 && tmux send-keys 'youtube-viewer --info=$(tmux show-buffer) && tmux kill-pane\n'"; open-in-browser ; set browser "$URLPORTAL %u"[m
+[7m[32m [m
+[32m[m[32mmacro m set browser "tmux set-buffer %u && tmux split-window -p 80 && tmux send-keys 'youtube-viewer --related=$(tmux show-buffer) && tmux kill-pane\n'"; open-in-browser ; set browser "$URLPORTAL %u"[m
+[7m[32m [m
+[7m[32m [m
+[32m[m[32m# open youtube-dl supported video or audio with default player[m
+[32m[m[32m# macro u set browser "youtube-dl -o - %u | $PLAYER -"; open-in-browser ; set browser "$BROWSER %u"[m
+[32m[m[32m# macro u set browser "nohup $PLAYER $(youtube-dl -g %u) >/dev/null 2>&1 & disown"; open-in-browser ; set browser "$BROWSER %u"[m
+[32m[m[32m# macro i set browser "$IMAGEVIEWER %u"; open-in-browser ; set browser "$BROWSER %u"[m
+[32m[m[32m# macro m set browser "$PLAYER %u"; open-in-browser ; set browser "$BROWSER %u"[m
+[32m[m[32mmacro v set browser "lynx -dump %u | awk '/http/{print $2}' | awk '!x[$0]++' | vim -R -"; open-in-browser ; set browser "$URLPORTAL %u"[m
+[32m[m[32m# macro p pipe-to "grep -o 'http.*mp3' | xargs -n1 mpv" ; toggle-article-read "read"[m
+[32m[m[32m# macro t pipe-to xclip -selection clipboard | grep "^Title:"[m
+[32m[m[32m# bind-key ^B pipe-to "xclip -selection clipboard"[m
+[32m[m[32m# macro m set browser "(echo -n %u | xclip -selection clipboard) && tmux split-window && tmux send-keys 'mpsyt url "$(xclip -selection clipboard -o)" && tmux kill-pane\n'" ; open-in-browser ; set browser "$BROWSER %u"[m
+[7m[32m [m
+[32m[m[32m# }}}[m
+[32m[m[32m#-------- filter {{{[m
+[32m[m[32m#------------------------------------------------------[m
+[32m[m[32m# https://newsbeuter.org/doc/newsbeuter.html#_filter_language[m
+[32m[m[32m# only works with Attributes > Context > feed,article[m
+[32m[m[32m# e.g: feedtitle, description, feedlink, feeddate, rssurl, unread_count, total_count, tags, feedindex[m
+[7m[32m [m
+[32m[m[32m# 'title' is not available[m
+[32m[m[32m# 'author' is not available[m
+[7m[32m [m
+[32m[m[32m# Feed: gotbletu                                              <--- feedtitle[m
+[32m[m[32m# Title: browsh - Modern Text-Based Browser - Linux TUI[m
+[32m[m[32m# Author: gotbletu[m
+[32m[m[32m# Link: https://www.youtube.com/watch?v=HZq86XfBoRo[m
+[32m[m[32m# Date: Wed, 11 Jul 2018 17:00:03 -0700[m
+[7m[32m [m
+[32m[m[32mdefine-filter "Top 10 Most Pirated Movies of The Week on BitTorrent" "feedtitle =~ \"DVDrip – TorrentFreak\""[m
+[32m[m[32mdefine-filter "gotbletu" "feedtitle =~ \"gotbletu\" or description =~ \"gotbletu\""[m
+[32m[m[32m# define-filter "windowsdec" "description =~ \"windows\""[m
+[32m[m[32m# define-filter "windows" "title = \"firearms\""[m
+[32m[m[32m# define-filter "gotbletudesc" "description =~ \"gotbletu\""[m
+[32m[m[32m# define-filter "alt living" "feedtitle =~ \"tiny house\""[m
+[32m[m[32m# define-filter "Top10TagANDFeedTitle" "tags # \"Video-MovieTalk\" and feedtitle =~ \"Top 10 Most Pirated Movies of The Week on BitTorrent\""[m
+[32m[m[32m# define-filter "Top10TagANDFeelink" "tags # \"Video-MovieTalk\" and feedlink =~ \"https://torrentfreak.com/top-10-pirated-movies-week-bittorrent\""[m
+[32m[m[32m# define-filter "Top10FeedTitle-Top10" "description =~ \"Top 10 Most Pirated Movies of The Week on BitTorrent\""[m
+[7m[32m [m
+[32m[m[32m# }}}[m
+[7m[32m [m
+[32m[m[32m# pager "w3m /usr/lib/w3m/cgi-bin/treat_as_url.cgi %f"[m
+[7m[32m [m
+[7m[32m [m
+[32m[m[32m##############################[m
+[32m[m[32m####### THEMES ###############[m
+[32m[m[32m##############################[m
+[32m[m[32m#-------- Legends {{{[m
+[32m[m[32m#------------------------------------------------------[m
+[32m[m[32m# references: https://newsbeuter.org/doc/newsbeuter.html#_configuring_colors[m
+[32m[m[32m# background                Loading Status at the bottom [e.g (5/25) Loading https://www.reddit.com/r/commandline/.rss][m
+[32m[m[32m# listfocus                 [Feed Window Listing] line is highlighted[m
+[32m[m[32m# listnormal                [Feed Window Listing] line is NOT highlighted[m
+[32m[m[32m# listfocus_unread          [Article Window Listing] line is highlighted[m
+[32m[m[32m# listnormal_unread         [Article Window Listing] line is NOT highlighted[m
+[32m[m[32m# info                      Information Bar at the top/bottom [e.g ENTER:Open n:Next Unread r:Reload R:Reload ?:Help][m
+[32m[m[32m# article                   Body of the Article[m
+[32m[m[32m# }}}[m
+[7m[32m [m
+[32m[m[32m# Note: themes base on Tango Palette Color Scheme on Guake Terminal[m
+[32m[m[32m# color <element>           <fgcolor>  <bgcolor>    [<attr> ...]; default value: n/a)[m
+[32m[m[32m# #-------- Theme: Tron Legacy by gotbletu (2015) {{{[m
+[32m[m[32m# #------------------------------------------------------[m
+[32m[m[32m# # preview: https://i.imgur.com/1ipdUxw.png[m
+[32m[m[32m#[m
+[32m[m[32m# color   background          cyan       black[m
+[32m[m[32m# color   listfocus           cyan       white[m
+[32m[m[32m# color   listnormal          cyan       black[m
+[32m[m[32m# color   listfocus_unread    cyan       white[m
+[32m[m[32m# color   listnormal_unread   cyan       black[m
+[32m[m[32m# color   info                cyan       black[m
+[32m[m[32m# color   article             cyan       black[m
+[32m[m[32m# # }}}[m
+[32m[m[32m# #-------- Theme: Tron Clu by gotbletu (2015) {{{[m
+[32m[m[32m# #------------------------------------------------------[m
+[32m[m[32m# # preview: https://i.imgur.com/RnhqS8W.png[m
+[32m[m[32m#[m
+[32m[m[32m# color   background          yellow      black[m
+[32m[m[32m# color   listfocus           white       green        bold[m
+[32m[m[32m# color   listnormal          yellow      black[m
+[32m[m[32m# color   listfocus_unread    white       green        bold[m
+[32m[m[32m# color   listnormal_unread   yellow      black[m
+[32m[m[32m# color   info                yellow      black[m
+[32m[m[32m# color   article             yellow      black[m
+[32m[m[32m# # }}}[m
+[32m[m[32m# #-------- Theme: The Brood by gotbletu (2015) {{{[m
+[32m[m[32m# #------------------------------------------------------[m
+[32m[m[32m# # preview: https://i.imgur.com/76ZFiLL.png[m
+[32m[m[32m#[m
+[32m[m[32m# # highlight article "^(Title):.*$" blue black[m
+[32m[m[32m# # highlight article "^(Date):.*$" green black[m
+[32m[m[32m# # highlight article "https?://[^ ]+" green black[m
+[32m[m[32m# # highlight article "\\[image\\ [0-9]+\\]" green black[m
+[32m[m[32m#[m
+[32m[m[32m# # highlights[m
+[32m[m[32m# highlight article "^(Feed|Title|Link|Date|Author):.*$" green black[m
+[32m[m[32m# highlight article "https?://[^ ]+"  blue black[m
+[32m[m[32m#[m
+[32m[m[32m#[m
+[32m[m[32m# color   background          red        black[m
+[32m[m[32m# color   listfocus           red        black        bold[m
+[32m[m[32m# color   listnormal          red        black[m
+[32m[m[32m# color   listfocus_unread    red        black        bold[m
+[32m[m[32m# color   listnormal_unread   red        black[m
+[32m[m[32m# color   info                red        black[m
+[32m[m[32m# color   article             red        black[m
+[32m[m[32m#[m
+[32m[m[32m#[m
+[32m[m[32m#[m
+[32m[m[32m# # }}}[m
+[32m[m[32m# #-------- Theme: Green Ranger Power by gotbletu (2017) {{{[m
+[32m[m[32m# #------------------------------------------------------[m
+[32m[m[32m# # preview: https://i.imgur.com/k3uEt8i.png[m
+[32m[m[32m#[m
+[32m[m[32m# color   background          green      black[m
+[32m[m[32m# color   listfocus           green      black        bold[m
+[32m[m[32m# color   listnormal          green      black[m
+[32m[m[32m# color   listfocus_unread    green      black        bold[m
+[32m[m[32m# color   listnormal_unread   green      black[m
+[32m[m[32m# color   info                green      black[m
+[32m[m[32m# color   article             green      black[m
+[32m[m[32m#[m
+[32m[m[32m# # }}}[m
+[32m[m[32m# #-------- Theme: Solarized-dark {{{[m
+[32m[m[32m# #------------------------------------------------------[m
+[32m[m[32m# ## source: https://github.com/newsboat/newsboat/blob/master/contrib/colorschemes/solarized-dark[m
+[32m[m[32m#[m
+[32m[m[32m# color background         default   default[m
+[32m[m[32m# color listnormal         default   default[m
+[32m[m[32m# color listnormal_unread  default   default[m
+[32m[m[32m# color listfocus          black     yellow[m
+[32m[m[32m# color listfocus_unread   black     yellow[m
+[32m[m[32m# color info               default   black[m
+[32m[m[32m# color article            default   default[m
+[32m[m[32m#[m
+[32m[m[32m# # highlights[m
+[32m[m[32m# highlight article "^(Title):.*$" blue default[m
+[32m[m[32m# highlight article "https?://[^ ]+" red default[m
+[32m[m[32m# highlight article "\\[image\\ [0-9]+\\]" green default[m
+[32m[m[32m#[m
+[32m[m[32m# # }}}[m
+[32m[m[32m#-------- Theme: Solarized-dark Modded {{{[m
+[32m[m[32m#------------------------------------------------------[m
+[32m[m[32m## source: https://github.com/newsboat/newsboat/blob/master/contrib/colorschemes/solarized-dark[m
+[7m[32m [m
+[32m[m[32mcolor background         default   default[m
+[32m[m[32mcolor listnormal         default   default[m
+[32m[m[32mcolor listnormal_unread  default   default[m
+[32m[m[32mcolor listfocus          black     green[m
+[32m[m[32mcolor listfocus_unread   black     green[m
+[32m[m[32mcolor info               default   black[m
+[32m[m[32mcolor article            default   default[m
+[7m[32m [m
+[32m[m[32m# highlights[m
+[32m[m[32mhighlight article "^(Title):.*$" blue default[m
+[32m[m[32mhighlight article "https?://[^ ]+" red default[m
+[32m[m[32mhighlight article "\\[image\\ [0-9]+\\]" green default[m
+[7m[32m [m
+[32m[m[32m# }}}[m
+[32m[m[32m# #-------- Highlight sample {{{[m
+[32m[m[32m# #------------------------------------------------------[m
+[32m[m[32m# highlight article "^Feed:.*" color174 default[m
+[32m[m[32m# highlight article "^Title:.*" color223 color108 bold[m
+[32m[m[32m# highlight article "^Author:.*" color114 default[m
+[32m[m[32m# highlight article "^Link:.*" color116 default[m
+[32m[m[32m# highlight article "^Date:.*" color223 default[m
+[32m[m[32m# highlight article "\\[[0-9][0-9]*\\]" color66 default bold[m
+[32m[m[32m# highlight article "\\[image [0-9][0-9]*\\]" color109 default bold[m
+[32m[m[32m# highlight article "\\[embedded flash: [0-9][0-9]*\\]" color66 default bold[m
+[32m[m[32m#[m
+[32m[m[32m# # }}}[m
+[32m[m[32m#-------- Theme: Empty {{{[m
+[32m[m[32m#------------------------------------------------------[m
+[7m[32m [m
+[32m[m[32m# }}}[m
+[32m[m[32m#-------- Theme: Empty {{{[m
+[32m[m[32m#------------------------------------------------------[m
+[7m[32m [m
+[32m[m[32m# }}}[m
+[32m[m[32m#-------- Theme: Empty {{{[m
+[32m[m[32m#------------------------------------------------------[m
+[7m[32m [m
+[32m[m[32m# }}}[m
+[32m[m[32m#-------- Theme: Empty {{{[m
+[32m[m[32m#------------------------------------------------------[m
+[7m[32m [m
+[32m[m[32m# }}}[m
+[7m[41m [m
+[7m[41m [m
+[7m[41m [m
+[1m[0m[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;11mmodified: newsboat/urls
+[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[36m[1m[38;5;13m@ newsboat/urls:25 @[0m[1m[38;5;146m https://mnormandavies.substack.com/feed[0m
+https://substack.com/@wublockchain/feed[m
+https://jarvislabs.substack.com/feed[m
+https://bitcoinstrategy.substack.com/feed[m
+[32m[m[32m----------------AI---------------------------[m
+[32m[m[32mhttps://erichartford.com/rss.xml[m
+[32m[m[32mhttp://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Ferichartford.com%2Frss.xml&max=200&links=preserve&exc=&submit=Create+Feed[m
+#[m
+-------------Geo Blog------------------------[m
+https://stavroulapabst.substack.com/feed #Stavroula Pabst is a writer, comedian, and media PhD student at the National and Kapodistrian University of Athens in Athens, Greece. Her writing has appeared in publications including Propaganda in Focus, Reductress, Unlimited Hangout and The Grayzone[m
+[36m[1m[38;5;13m@ newsboat/urls:47 @[0m[1m[38;5;146m https://www.lynalden.com/feed/[0m
+---------------Linux ------------------------[m
+https://www.kali.org/rss.xml[m
+https://proton.me/blog/feed[m
+[32m[m[32mhttps://smarttech101.com/feed/[m
+[32m[m[32mhttp://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Fsmarttech101.com%2Ffeed%2F&max=200&links=preserve&exc=&submit=Create+Feed[m
+#[m
+--------------Phylosophy---------------------[m
+https://neofeudalism.substack.com/feed[m
+[36m[1m[38;5;13m@ newsboat/urls:100 @[0m[1m[38;5;146m https://www.reddit.com/r/unixporn/.rss Reddit "~Unixporn" Tech[0m
+════════════════════════════════════════════════[m
+http://getpocket.com/users/drigy/feed/unread [m
+# }}}[m
+[32m[m[32mhttps://newsboat.org/news.atom[m
+[1m[0m[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;11mmodified: newsraft/conf
+[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[36m[1m[38;5;13m@ newsraft/conf:16 @[0m[1m[38;5;146m color-list-item-important bold red default[0m
+bind ^P mark-unread-all[m
+[m
+# Command binding for opening links with feh image viewer.[m
+[31mbind f exec [7mfeh[27m "%l"[m
+[32m[m[32mbind f exec [7mimv[27m "%l"[m
+[m
+# This will launch mpv in the background.[m
+bind m exec mpv --no-terminal "%l" &[m
+[36m[1m[38;5;13m@ newsraft/conf:24 @[0m[1m[38;5;146m bind m exec mpv --no-terminal "%l" &[0m
+# This will launch mpv interactively.[m
+bind M exec mpv "%l"[m
+[m
+[32m[m[32m# Open in cli browser[m
+[32m[m[32mbind e exec links "%l"[m
+[7m[32m [m
+[32m[m[32mbind E exec ${BROWSERCLI:-xdg-open} "%l"[m
+[1m[0m[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;11mmodified: newsraft/feeds
+[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[36m[1m[38;5;13m@ newsraft/feeds:4 @[0m[0m
+https://musicforprogramming.net/rss.xml[m
+[7m[31m [m
+@World Affairs[m
+https://feeds.feedburner.com/zerohedge/feed "ZeroHedge"[m
+https://www.voltairenet.org/spip.php?page=backend&id_secteur=1110&lang=en "Voltaire"[m
+https://larrycjohnson.substack.com/feed "Larry Johnson"[m
+https://orientalreview.su/feed/  "Oriental Review"[m
+[32m[m[32mhttp://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Forientalreview.su%2Ffeed%2F&max=200&links=preserve&exc=&submit=Create+Feed "OR Full"[m
+[32m[m[32mhttp://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Fwww.voltairenet.org%2Fspip.php%3Fpage%3Dbackend%26id_secteur%3D1110%26lang%3Den&max=200&links=preserve&exc=&submit=Create+Feed "Voltaire Full"[m
+[m
+@OSINT[m
+https://bmanalysis.substack.com/feed "Black Mountain Analisys"[m
+[36m[1m[38;5;13m@ newsraft/feeds:20 @[0m[1m[38;5;146m https://mnormandavies.substack.com/feed[0m
+#[m
+#[m
+@Blockchain[m
+[32m[m[32mhttps://insights.glassnode.com/rss/[m
+https://substack.com/@wublockchain/feed[m
+https://jarvislabs.substack.com/feed "Jarvis"[m
+https://bitcoinstrategy.substack.com/feed  [m
+[32m[m[32mhttps://www.coindesk.com/arc/outboundfeeds/rss/ "CoinDesk"[m
+[32m[m[32mhttps://decrypt.co/feed "DeCrypt"[m
+[32m[m[32mhttps://cointelegraph.com/rss "Coin Telegraph"[m
+[32m[m[32m@AI[m
+[32m[m[32mhttp://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Ferichartford.com%2Frss.xml&max=200&links=preserve&exc=&submit=Create+Feed[m
+[32m[m[32m#[m
+[32m[m[32m@Blogs[m
+[32m[m[32mhttps://www.snapsbyfox.com/blog?format=rss[m
+[32m[m[32mhttps://thelinuxcast.org/feed/feed.xml[m
+[32m[m[32mhttps://gideonwolfe.com/index.xml "~Gideon Wolfe"[m
+[32m[m[32mhttps://lukesmith.xyz/rss.xml "Luke Smith"[m
+[32m[m[32mhttp://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Flukesmith.xyz%2Frss.xml+&max=200&links=preserve&exc=&submit=Create+Feed "Luke Smith Full"[m
+[32m[m[32mhttps://thevaluable.dev/index.xml[m
+[32m[m[32mhttp://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Fthevaluable.dev%2Findex.xml&max=200&links=preserve&exc=&submit=Create+Feed "The Valuable Dev Full"[m
+[32m[m[32mhttps://tux.pizza/feed.xml[m
+[32m[m[32mhttps://hexdsl.com/index.xml[m
+[32m[m[32mhttp://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Fhexdsl.com%2Findex.xml&max=200&links=preserve&exc=&submit=Create+Feed "HexDSL"[m
+[32m[m[32m#[m
+#[m
+@Geo Blog[m
+https://stavroulapabst.substack.com/feed #Stavroula Pabst is a writer, comedian, and media PhD student at the National and Kapodistrian University of Athens in Athens, Greece. Her writing has appeared in publications including Propaganda in Focus, Reductress, Unlimited Hangout and The Grayzone[m
+https://www.caitlinjohnst.one/feed "Caitlin Johstone"[m
+@Investing[m
+[32m[m[32mhttps://www.ft.com/cryptofinance?format=rss[m
+[32m[m[32mhttps://www.ft.com/stablecoins?format=rss[m
+https://www.lynalden.com/feed/ "Lyn Alden"[m
+[7m[31m [m
+[32m[m[32mhttps://cedarowl.substack.com/feed[m
+@Linux[m
+https://www.kali.org/rss.xml "Kali Linux"[m
+https://proton.me/blog/feed  "Proton"[m
+[32m[m[32mhttps://smarttech101.com/feed/[m
+[32m[m[32m@Home Lab[m
+[32m[m[32mhttps://nerdyarticles.com/rss/ "Self Hosting, New Technologies and general IT nerdy stuff"[m
+#[m
+@Philosophy[m
+https://neofeudalism.substack.com/feed  ""[m
+[36m[1m[38;5;13m@ newsraft/feeds:71 @[0m[1m[38;5;146m https://www.mojblink.si/rss?passkey=6ae95e11593f03d61fb211abd5d2e87c&type=web[0m
+@slo-torrent[m
+https://www.tornado.si/?p=forums&pid=11&action=rss&fid=5[m
+[m
+[32m[m[32m@Journalism[m
+[32m[m[32mhttps://jonathancook.substack.com/feed "Jonathan Cook"[m
+[7m[32m [m
+@MSM[m
+http://rss.cnn.com/rss/cnn_topstories.rss "CNN"[m
+https://www.politika.rs/rss/ [m
+[7m[31m [m
+[31m@Blogs[m
+[31mhttps://www.snapsbyfox.com/blog?format=rss[m
+[31mhttps://thelinuxcast.org/feed/feed.xml[m
+[31mhttps://gideonwolfe.com/index.xml "~Gideon Wolfe"[m
+[31mhttps://lukesmith.xyz/rss.xml Blog "~Luke Smith" Tech[m
+[31mhttps://thevaluable.dev/index.xml[m
+[31mhttps://tux.pizza/feed.xml[m
+[32m[m[32mhttp://82.136.76.6:50006/makefulltextfeed.php?url=sec%3A%2F%2Fwww.politika.rs%2Frss%2F+&max=200&links=preserve&exc=&submit=Create+Feed "Politika"[m
+[m
+@Youtube[m
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA Youtube "~Luke Smith" Tech[m
+[36m[1m[38;5;13m@ newsraft/feeds:97 @[0m[1m[38;5;146m https://www.reddit.com/r/linuxmemes/.rss Reddit "~Arch Linux memes" Entertainmen[0m
+https://www.reddit.com/r/unixporn/.rss Reddit "~Unixporn" Tech[m
+http://getpocket.com/users/drigy/feed/unread [m
+# }}}[m
+[7m[32m [m
+[7m[32m [m
+[32m[m[32m@Arch[m
+[32m[m[32mhttps://bbs.archlinux.org/extern.php?action=feed&tid=297004&type=atom "Issue with Update"[m
+[32m[m[32mhttps://bbs.archlinux.org/extern.php?action=feed&type=atom "Arch Forum"[m
+[32m[m[32mhttps://newsboat.org/news.atom[m
+[1m[0m[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;11mmodified: tmux/tmux.conf
+[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[36m[1m[38;5;13m@ tmux/tmux.conf:58 @[0m[1m[38;5;146m bind -n M-k next-window[0m
+# \____\___/| .__/ \__, | |_|  |_|\___/ \__,_|\___|[m
+#           |_|    |___/[m
+#[m
+[31m[7m#[27mset-window-option -g mode-keys vi[m
+[32m[m[32m[7m[27mset-window-option -g mode-keys vi[m
+[m
+# We do the following:[m
+#1. Changing the keystroke to select text from the default SPACE to v (for v isual).[m
+[1m[0m[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;11mmodified: waybar/config
+[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[36m[1m[38;5;13m@ waybar/config:12 @[0m[0m
+    "modules-left": ["clock", "custom/weather", "idle_inhibitor", "hyprland/workspaces"],[m
+    //"modules-left": ["clock","hyprland/window"],[m
+    "modules-center": [],[m
+[31m    "modules-right": ["temperature", "memory", "battery","network", "backlight", "pulseaudio", "bluetooth", "tray", "power-profiles-daemon"],[m
+[32m[m[32m    "modules-right": ["temperature", "memory", "battery", "network", "backlight", "pulseaudio", "bluetooth", "tray", "power-profiles-daemon"],[m
+[32m[m[41m    [m
+    "hyprland/window": {[m
+        "format": "{}"[m
+    },[m
+[m
+[31m[7m[27m"disk": {[m
+[31m    [7m[27m"interval": 30,[m
+[31m    [7m[27m"format": "{free}",[m
+[31m    [7m[27m"path": "/"[m
+[31m[7m[27m},[m
+[32m[m[32m[7m    [27m"disk": {[m
+[32m[m[32m    [7m    [27m"interval": 30,[m
+[32m[m[32m    [7m    [27m"format": "{free}",[m
+[32m[m[32m    [7m    [27m"path": "/"[m
+[32m[m[32m[7m    [27m},[m
+[m
+    "memory": {[m
+[31m    [7m[27m"interval": 30,[m
+[31m    [7m[27m"format": "{}% ",[m
+[31m    [7m[27m"max-length": 10[m
+[31m[7m[27m},[m
+[7m[31m [m
+[31m[7m[27m"custom/weather": {[m
+[31m    [7m[27m"format": "{}°",[m
+[31m    [7m[27m"tooltip": true,[m
+[31m    [7m[27m"interval": 600,[m
+[31m    [7m[27m"exec": "wttrbar",[m
+[31m    [7m[27m"return-type": "json"[m
+[31m[7m[27m},[m
+[32m[m[32m    [7m    [27m"interval": 30,[m
+[32m[m[32m    [7m    [27m"format": "{}% ",[m
+[32m[m[32m    [7m    [27m"max-length": 10[m
+[32m[m[32m[7m    [27m},[m
+[7m[32m [m
+[32m[m[32m[7m    [27m"custom/weather": {[m
+[32m[m[32m    [7m    [27m"format": "{}°",[m
+[32m[m[32m    [7m    [27m"tooltip": true,[m
+[32m[m[32m    [7m    [27m"interval": 600,[m
+[32m[m[32m    [7m    [27m"exec": "wttrbar",[m
+[32m[m[32m    [7m    [27m"return-type": "json"[m
+[32m[m[32m[7m    [27m},[m
+[m
+    "power-profiles-daemon": {[m
+[31m  [7m"format": "{icon}  [27m {profile}",[m
+[31m  [7m[27m"tooltip-format": "Power profile: {profile}\nDriver: {driver}",[m
+[31m  [7m[27m"tooltip": true,[m
+[31m  [7m[27m"format-icons": {[m
+[31m    [7m[27m"default": "",[m
+[31m    [7m[27m"performance": "",[m
+[31m    [7m[27m"balanced": "",[m
+[31m    [7m[27m"power-saver": ""[m
+[31m  [7m[27m}[m
+[31m[7m[27m},[m
+[7m[31m [m
+[31m [7m[27m"hyprland/workspaces": {[m
+[31m  [7m[27m"format": "{icon}",[m
+[31m  [7m[27m"on-click": "activate",[m
+[31m  [7m[27m"format-icons": {[m
+[31m    [7m[27m"1": "",[m
+[31m    [7m[27m"2": "",[m
+[31m    [7m[27m"3": "",[m
+[31m    [7m[27m"4": "",[m
+[31m    [7m[27m"5": "",[m
+[31m    [7m[27m"urgent": "",[m
+[31m    [7m[27m"active": "",[m
+[31m    [7m[27m"default": ""[m
+[31m  [7m[27m},[m
+[31m  [7m[27m"sort-by-number": true[m
+[31m},  [m
+[31m    "custom/power_profile":{[m
+[31m      //shows the current power profile and switches to next on click[m
+[32m[m[32m  [7m      "format": "{icon}[27m {profile}",[m
+[32m[m[32m  [7m      [27m"tooltip-format": "Power profile: {profile}\nDriver: {driver}",[m
+[32m[m[32m  [7m      [27m"tooltip": true,[m
+[32m[m[32m  [7m      [27m"format-icons": {[m
+[32m[m[32m    [7m        [27m"default": "",[m
+[32m[m[32m    [7m        [27m"performance": "",[m
+[32m[m[32m    [7m        [27m"balanced": "",[m
+[32m[m[32m    [7m        [27m"power-saver": ""[m
+[32m[m[32m  [7m      [27m}[m
+[32m[m[32m[7m    [27m},[m
+[7m[32m [m
+[32m[m[32m [7m   [27m"hyprland/workspaces": {[m
+[32m[m[32m  [7m      [27m"format": "{icon}",[m
+[32m[m[32m  [7m      [27m"on-click": "activate",[m
+[32m[m[32m  [7m      [27m"format-icons": {[m
+[32m[m[32m    [7m        [27m"1": "",[m
+[32m[m[32m    [7m        [27m"2": "",[m
+[32m[m[32m    [7m        [27m"3": "",[m
+[32m[m[32m    [7m        [27m"4": "",[m
+[32m[m[32m    [7m        [27m"5": "",[m
+[32m[m[32m    [7m        [27m"urgent": "",[m
+[32m[m[32m    [7m        [27m"active": "",[m
+[32m[m[32m    [7m        [27m"default": ""[m
+[32m[m[32m  [7m      [27m},[m
+[32m[m[32m  [7m      [27m"sort-by-number": true[m
+[32m[m[32m    },[m
+[7m[32m [m
+[32m[m[32m    "custom/power_profile": {[m
+        "exec": "asusctl profile -p | sed s:'Active profile is'::",[m
+        "interval": 30,[m
+[31m        "format": "󰈐{}",[7m [m[27m
+[32m[m[32m        "format": "󰈐{}",[m[7m[27m
+        "on-click": "asusctl profile -n; pkill -SIGRTMIN+8 waybar",[m
+        "signal": 8[m
+    },[m
+[m
+[31m    //"custom/weather" : {[m
+[31m        //shows the current weather and forecast[m
+[31m        // "tooltip" : true,[m
+[31m        //"format" : "{}",[m
+[31m        //"interval" : 30,[m
+[31m        //"exec" : "~/.config/waybar/scripts/waybar-wttr.py",[m
+[31m        //"return-type" : "json"[m
+[31m    //},[m
+[7m[31m [m
+    "tray": {[m
+        "icon-size": 15,[m
+        "spacing": 10[m
+    },[m
+[m
+[31m"clock": {[m
+[31m		"format-alt": "{:%a, %d. %b  %H:%M}",[m
+[31m    "on-click-right": "/home/kopachke/scripts/wallpaper/changeWallpaper2.sh"[m
+[32m[m[32m    "clock": {[m
+[32m[m[32m        "format-alt": "{:%a, %d. %b  %H:%M}",[m
+[32m[m[32m        "on-click-right": "/home/kopachke/scripts/wallpaper/changeWallpaper2.sh"[m
+[32m[m[32m    },[m
+[m
+[31m	},[m
+    "backlight": {[m
+        "device": "intel_backlight",[m
+        "format": "{icon} {percent}%",[m
+[36m[1m[38;5;13m@ waybar/config:106 @[0m[0m
+[m
+    "network": {[m
+        "interface": "wlp2s0", // (Optional) To force the use of this interface[m
+[31m        "format-wifi": " [7m [27m{signalStrength}%",[m
+[32m[m[32m        "format-wifi": " [7m[27m{signalStrength}%",[m
+        "format-ethernet": "{ipaddr}/{cidr} ",[m
+        "tooltip-format": "{essid} - {ifname} via {gwaddr} ",[m
+        "format-linked": "{ifname} (No IP) ",[m
+        "format-disconnected": "⚠",[m
+        "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"[m
+[31m    }[m
+    },[m
+[m
+[7m[31m [m
+    "pulseaudio": {[m
+        "format": "{icon} {volume}%",[m
+        "tooltip": false,[m
+[36m[1m[38;5;13m@ waybar/config:130 @[0m[0m
+            "portable": "",[m
+            "car": "",[m
+            "default": ["", "", ""][m
+[31m            "on-click": mute[m
+[31m    [7m    [27m},[m
+[32m[m[32m        }[m
+[32m[m[32m    [7m[27m},[m
+[m
+[31m  [7m[27m"idle_inhibitor": {[m
+[32m[m[32m  [7m  [27m"idle_inhibitor": {[m
+        "format": "{icon}",[m
+        "format-icons": {[m
+            "activated": "",[m
+            "deactivated": ""[m
+        }[m
+[7m[31m [m
+    },[m
+[m
+    "pulseaudio#microphone": {[m
+[36m[1m[38;5;13m@ waybar/config:150 @[0m[0m
+        "on-scroll-down": "pamixer --default-source -d 5",[m
+        "scroll-step": 5[m
+    },[m
+[31m    [m
+[7m[32m [m
+    "cava": {[m
+        "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",[m
+        "framerate": 30,[m
+[36m[1m[38;5;13m@ waybar/config:168 @[0m[0m
+        "waves": false,[m
+        "noise_reduction": 0.77,[m
+        "input_delay": 2,[m
+[31m        "format-icons"[7m : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" [27m],[m
+[32m[m[32m        "format-icons"[7m: ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"[27m],[m
+        "actions": {[m
+[31m            [7m       [27m"on-click-right": "mode"[m
+[31m        [7m           [27m}[m
+[32m[m[32m            [7m[27m"on-click-right": "mode"[m
+[32m[m[32m        [7m[27m}[m
+    },[m
+[m
+[31m    //"temperature": {[m
+[31m        //"thermal-zone": 1,[m
+[31m        //"format": "{temperatureF}°F ",[m
+[31m        //"critical-threshold": 80,[m
+[31m        //"format-critical": "{temperatureC}°C "[m
+[31m    //},[m
+[7m[31m [m
+[7m[31m [m
+    "bluetooth": {[m
+[31m[7m	[27m    "format": " {status}",[m
+[31m[7m	[27m    "format-disabled": "", // an empty format will hide the module[m
+[31m[7m	[27m    "format-connected": " {num_connections}",[m
+[31m[7m	[27m    "tooltip-format": "{device_alias}",[m
+[31m[7m	[27m    "tooltip-format-connected": " {device_enumerate}",[m
+[31m[7m	[27m    "tooltip-format-enumerate-connected": "{device_alias}"[m
+[32m[m[32m[7m    [27m    "format": " {status}",[m
+[32m[m[32m[7m    [27m    "format-disabled": "", // an empty format will hide the module[m
+[32m[m[32m[7m    [27m    "format-connected": " {num_connections}",[m
+[32m[m[32m[7m    [27m    "tooltip-format": "{device_alias}",[m
+[32m[m[32m[7m    [27m    "tooltip-format-connected": " {device_enumerate}",[m
+[32m[m[32m[7m    [27m    "tooltip-format-enumerate-connected": "{device_alias}"[m
+    }[m
+}[m
+[31m}[m
+[1m[0m[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;11mmodified: zathura
+[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[36m[1m[38;5;13m@ zathura:1 @[0m[0m
+[31mSubproject commit d21609b0548eaf45cccc275791dd3cc5c22baa5e[m[7m[27m
+[32m[m[32mSubproject commit d21609b0548eaf45cccc275791dd3cc5c22baa5e[7m-dirty[m[27m
+[1m[0m[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;11mmodified: zinger/zingers.txt
+[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[36m[1m[38;5;13m@ zinger/zingers.txt:246 @[0m[1m[38;5;146m In the end, the only way to make large groups of people do what they well and tr[0m
+"When I was a boy of 14, my father was so ignorant I could hardly stand to have the old man around. But when I got to be 21, I was astonished at how much the old man had learned in seven years." ;; Mark Twain quote[m
+"I do not fear death. I had been dead for billions and billions of years before I was born, and had not suffered the slightest inconvenience from it." ;; Mark Twain quote[m
+[m
+[7m[31m [m
+[32m[m[32mDorsey described algorithms as having an impact on free will, since while government and social media moderation policies can affect users’ ability to share their views, algorithms can subconsciously affect how people interpret and understand the world in the first place, and thus what views they end up having. ;; Jack Dorsey freedom algorythm[m
+[m
+[1m[0m[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;11mmodified: zsh/.zshenv
+[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[36m[1m[38;5;13m@ zsh/.zshenv:27 @[0m[1m[38;5;146m export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git'"[0m
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"[m
+[m
+# Web Browser[m
+[31m#export BROSER="firefox"[m
+[32m[m[32mexport BROWSER="firefox"[m
+[7m[32m [m
+[32m[m[32m# Command Line Browser[m
+[32m[m[32mexport BROWSERCLI="w3m"[m
+[m
+# PATHS[m
+[31mexport PATH="/home/kopachke/.local/share:~/go/bin:$/home/kopachke/.local/bin:PATH"[m
+[32m[m[32mexport PATH=$PATH:/home/kopachke/.spicetify[m
+[32m[m[32mexport PATH=$PATH:/home/kopachke/.local/bin[m
+[32m[m[32mexport PATH=$PATH:/home/kopachke/Apps[m
+[32m[m[32mexport PATH=$PATH:/home/kopachke/go/bin/[m
+[m
+[1m[0m[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;11mmodified: zsh/.zshrc
+[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[36m[1m[38;5;13m@ zsh/.zshrc:8 @[0m[1m[38;5;146m source "/home/kopachke/.gpt_api"[0m
+source "/home/kopachke/.gemini.api"[m
+source "/home/kopachke/dotfiles/zsh/fzf"[m
+source "/home/kopachke/dotfiles/zsh/scripts.sh"[m
+[7m[31m [m
+[32m[m[32msource "$DOTFILES/zsh/.zshenv"[m
+[m
+# Autoload and source fzf-tab[m
+autoload -U compinit; compinit[m
+[36m[1m[38;5;13m@ zsh/.zshrc:17 @[0m[1m[38;5;146m source /home/kopachke/git/fzf-tab/fzf-tab.plugin.zsh[0m
+# Enable AUTO_PARAM_SLASH[m
+setopt AUTO_PARAM_SLASH[m
+[m
+[31m/home/kopachke/dotfiles/i3/scripts/print256colours.sh [m
+[7m[31m [m
+[31mecho[m
+[7m[31m [m
+[31mneofetch[m
+[7m[31m [m
+[31mecho "Hello Dragan. Shall we play a game?" [m
+[31mecho[m
+[7m[31m [m
+# Disable CASE_GLOB[m
+unsetopt CASE_GLOB[m
+[m
+[36m[1m[38;5;13m@ zsh/.zshrc:65 @[0m[1m[38;5;146m function ya() {[0m
+}[m
+[m
+########## EXPORT[m
+[31mexport PATH=$PATH:/home/kopachke/.spicetify[m
+[31mexport PATH=$PATH:/home/kopachke/.local/bin[m
+[31mexport PATH=$PATH:/home/kopachke/Apps[m
+[7m[31m [m
+## >>> conda initialize >>>[m
+## !! Contents within this block are managed by 'conda init' !![m
+#__conda_setup="$('/usr/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"[m
+[36m[1m[38;5;13m@ zsh/.zshrc:88 @[0m[1m[38;5;146m eval "$(zoxide init zsh)"[0m
+[m
+# Added starship prompt[m
+eval "$(starship init zsh)"[m
+[7m[32m [m
+[32m[m[32mecho[m
+[32m[m[32m/home/kopachke/dotfiles/i3/scripts/print256colours.sh[m[41m [m
+[32m[m[32mecho[m
+[32m[m[32mecho[m
+[32m[m[32mfastfetch[m
+[32m[m[32mecho[m
+[7m[32m [m
+[32m[m[32mecho "Hello kopachke. Shall we play a game?"[m[41m [m
+[32m[m[32mecho[m
+[7m[41m [m
+[7m[41m [m
+[1m[0m[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;11mmodified: zsh/aliases
+[38;5;11m─────────────────────────────────────────────────────────────────────────────────[0m
+[36m[1m[38;5;13m@ zsh/aliases:25 @[0m[1m[38;5;146m alias colors='curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f4[0m
+ alias cg="chatgpt" [m
+ alias i="chatgpt -i"[m
+ alias g="/home/kopachke/go/bin/gemini"[m
+[32m[m[32m alias l="ollama run llama3"[m
+[32m[m[32m alias la="ollama run llama3:70b" #This is a larger model, cca. 40GB as opposed to 4.7GB[m
+[32m[m[32m alias l8b="ollama run lamma3:8b"[m
+[32m[m[32m alias lali="ollama run qwen2:7b-instruct-q8_0"[m
+[32m[m[32m alias l7b="ollama run qwen2:7b-instruct-q8_0"[m
+ alias class="xprop WM_CLASS"[m
+ alias colors="/home/kopachke/dotfiles/i3/scripts/print256colours.sh"[m
+ #alias ncmpcpp="/home/kopachke/scripts/music-server.sh"[m
+[36m[1m[38;5;13m@ zsh/aliases:166 @[0m[1m[38;5;146m alias nyk="$EDITOR $XDG_CONFIG_HOME/yazi/keymap.toml"[0m
+alias nya="$EDITOR $XDG_CONFIG_HOME/yazi/yazi.toml"[m
+alias nyt="$EDITOR $XDG_CONFIG_HOME/yazi/theme.toml"[m
+[m
+[31malias nhyp[7me[27mr="$EDITOR $XDG_CONFIG_HOME/hypr/hyprland.conf"[m
+[32m[m[32malias nhyp[7m[27mr="$EDITOR $XDG_CONFIG_HOME/hypr/hyprland.conf"[m
+alias nwaybar="$EDITOR $XDG_CONFIG_HOME/waybar/config"[m
+alias nwaybarstyle="$EDITOR $XDG_CONFIG_HOME/waybar/style.css"[m
+[m
+[36m[1m[38;5;13m@ zsh/aliases:192 @[0m[1m[38;5;146m alias personal='cp -Rf /personal/* ~'[0m
+###################################[m
+[m
+alias sozsh="source $DOTFILES/zsh/.zshrc"[m
+[32m[m[32malias nenv="$EDITOR $DOTFILES/zsh/.zshenv"[m
+[m
+##########################################[m
+##### tmux #####################[m
+[36m[1m[38;5;13m@ zsh/aliases:211 @[0m[1m[38;5;146m alias mqnap="sshfs -p 50080 drigy@82.136.76.6:/ ~/hpsamba"[0m
+[m
+alias cointop="TERM=screen-256color cointop"[m
+alias man="batman"[m
+[32m[m[32malias nzinger="lvim $XDG_CONFIG_HOME/zinger/zingers.txt"[m
+[7m[32m [m
+[32m[m[32m# Setting up a monitor[m[41m [m
+[32m[m[32malias monreset="hyprctl keyword monitor eDP-1, preferred, auto, 2"[m
+[32m[m[32malias rate120="hyprctl keyword monitor eDP-1, higres@highrr, auto, 2"[m
+[32m[m[32malias rate60="hyprctl keyword monitor eDP-1, 2880x1800@60, auto, 2"[m
+[32m[m[32malias rate30="hyprctl keyword monitor eDP-1, 2880x1800@30, auto, 2"[m
+[7m[32m [m
+[32m[m[32m# Zoxide[m
+[32m[m[32malias cd="z"[m
+[7m[32m [m
+[32m[m[32m# Git stuff[m
+[32m[m[32malias bec="better-commits"[m
+[7m[32m [m
+[32m[m[32m# Apps[m
+[32m[m[32malias telegram="flatpak run org.telegram.desktop"[m
