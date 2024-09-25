@@ -4,15 +4,14 @@ session_name: rss
 start_directory: $HOME/
 
 windows:
-    - window_name: cool
+    - window_name: rss
       layout: tiled
       main-pane-height: 67%
       panes:
-          - matrix
-          - 
-    - window_name: rss
+          - newsraft
+    - window_name: cool?
       layout: tiled
       panes:
-          - newsboat
+          - 
         
 

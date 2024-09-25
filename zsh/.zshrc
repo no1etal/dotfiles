@@ -4,9 +4,9 @@ source "$XDG_CONFIG_HOME/zsh/aliases"
 source "/home/kopachke/.gpt_api"
 source "/home/kopachke/.gemini.api"
 source "/home/kopachke/dotfiles/zsh/fzf"
-source "/home/kopachke/dotfiles/zsh/scripts.sh"
+source "$DOTFILES/zsh/scripts.sh"
 source "$DOTFILES/zsh/.zshenv"
-
+ftmuxp
 # Autoload and source fzf-tab
 autoload -U compinit; compinit
 source /home/kopachke/git/fzf-tab/fzf-tab.plugin.zsh
@@ -52,11 +52,12 @@ setopt interactive_comments
 #ftmuxp
 #
 # Yazi setting to change the current working directory when exiting Yazi.
-function ya() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
+#
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 	yazi "$@" --cwd-file="$tmp"
 	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		cd -- "$cwd"
+		builtin cd -- "$cwd"
 	fi
 	rm -f -- "$tmp"
 }
@@ -96,4 +97,4 @@ echo
 echo "Hello kopachke. Shall we play a game?" 
 echo
 
-
+export OLLAMA_HOST=0.0.0.0 

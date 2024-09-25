@@ -46,7 +46,7 @@ alias spqo='sudo pacman -Qo'    # query the package that owns a file
 alias spsii='sudo pacman -Sii'  # display detailed information about packages
 
 ## Colorize the grep command output for ease of use (good for log files)##
-alias grep='grep --color=auto'      # enables automatic colorization of matching text
+alias grep='rg --color=auto'      # enables automatic colorization of matching text
 alias egrep='egrep --color=auto'    
 alias fgrep='fgrep --color=auto'    # fixed-string matching
 
@@ -164,6 +164,7 @@ alias nya="$EDITOR $XDG_CONFIG_HOME/yazi/yazi.toml"
 alias nyt="$EDITOR $XDG_CONFIG_HOME/yazi/theme.toml"
 
 alias nhypr="$EDITOR $XDG_CONFIG_HOME/hypr/hyprland.conf"
+alias nbinds="$EDITOR $XDG_CONFIG_HOME/hypr/conf/binds.conf"
 alias nwaybar="$EDITOR $XDG_CONFIG_HOME/waybar/config"
 alias nwaybarstyle="$EDITOR $XDG_CONFIG_HOME/waybar/style.css"
 
@@ -219,8 +220,16 @@ alias rate30="hyprctl keyword monitor eDP-1, 2880x1800@30, auto, 2"
 # Zoxide
 alias cd="z"
 
+# Cheatsheet
+alias cheatsh="curl cheat.sh"
+VARIABLE="your_value"
+
 # Git stuff
 alias bec="better-commits"
 
 # Apps
 alias telegram="flatpak run org.telegram.desktop"
+alias flowtime="flatpak run io.github.diegoivanme.flowtime"
+
+# Random
+alias f=ftmuxp

@@ -1,0 +1,14 @@
+session_name: home
+windows:
+  - window_name: music
+    layout: tiled
+    shell_command_before:
+      - mmusic # run as a first command in all panes
+    panes:
+      - ncmpcpp
+  - window_name: systat
+    panes:
+      - btop
+  - window_name: files
+    panes:
+      - yy

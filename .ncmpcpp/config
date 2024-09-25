@@ -15,6 +15,12 @@ visualizer_type = "spectrum"
 visualizer_look = "◆▋"
 #visualizer_look = "+|"
 #visualizer_look = "●●"
+#
+#
+# SERVER
+#mpd_music_dir = "/home/storage/qnap/music"
+#lyrics_directory = "/home/storage/qnap/music/lyrics"
+
 
 message_delay_time = "3"
 playlist_shorten_total_times = "yes"
@@ -39,6 +45,7 @@ statusbar_color = "cyan"
 visualizer_color = "cyan" #magenta #cyan #green #red #blue
 
 mpd_host = "127.0.0.1"
+#mpd_host = "192.168.1.7"
 mpd_port = "6601"
 #mpd_port = "6680"
 mouse_list_scroll_whole_page = "yes"
@@ -46,3 +53,11 @@ lines_scrolled = "1"
 #ask_before_clearing_main_playlist = "yes"
 enable_window_title = "yes"
 song_columns_list_format = "(25)[cyan]{a} (40)[]{f} (30)[red]{b} (7f)[green]{l}"
+
+# some extra configs
+#
+fetch_lyrics_for_current_song_in_background = yes
+store_lyrics_in_song_dir = yes
+
+lastfm_preferred_language = en
+lyrics, last_fm.
