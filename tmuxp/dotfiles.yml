@@ -7,7 +7,7 @@ windows:
     - window_name: nvim dotfiles
       layout: tiled
       panes:
-          - lvim 
+          - lvim +FZF
     - window_name: terms
       layout: tiled
       panes:
