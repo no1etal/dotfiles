@@ -1,0 +1,10 @@
+session_name: ai
+windows:
+  - window_name: chatGPT
+    
+    panes: 
+      - i
+  - window_name: ollama3.1    
+    panes:
+      - ollama run llama3.1
+      

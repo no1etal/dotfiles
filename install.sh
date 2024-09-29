@@ -1,14 +1,5 @@
 #!/bin/bash
 
-# Check if waypaper is installed
-if ! pacman -Qi waypaper &> /dev/null; then
-    echo "Installing waypaper..."
-    sudo pacman -S waypaper
-    echo "waypaper installed successfully."
-else
-    echo "waypaper is already installed."
-fi
-
 ########
 # nvim #
 ########
@@ -164,16 +155,16 @@ ln -s "$DOTFILES/.ncmpcpp" "$HOME"
 # waybar   ###
 ##############
 
-#mkdir -p "$XDG_CONFIG_HOME/waybar"
+mkdir -p "$XDG_CONFIG_HOME/waybar"
 
-#rm -rf "XDG_CONFIG_HOME/waybar"
-#ln -s "$DOTFILES/waybar/" "$XDG_CONFIG_HOME"
+rm -rf "XDG_CONFIG_HOME/waybar"
+ln -s "$DOTFILES/waybar/" "$XDG_CONFIG_HOME"
 
 ############
 #   wofi ###
 ############
 
-#mkdir -p "$XDG_CONFIG_HOME/wofi"
+mkdir -p "$XDG_CONFIG_HOME/wofi"
 rm -rf "$XDG_CONFIG_HOME/wofi"
 
 ln -s "$DOTFILES/wofi" "$XDG_CONFIG_HOME"
@@ -237,4 +228,16 @@ ln -s "$DOTFILES/newsraft" "$XDG_CONFIG_HOME"
 rm -rf "XDG_CONFIG_HOME/starship.toml"
 ln -s "$DOTFILES/starship.toml" "$XDG_CONFIG_HOME"
 
+##################
+## waypaper ######
+##################
+
+# Check if waypaper is installed
+if ! pacman -Qi waypaper &> /dev/null; then
+    echo "Installing waypaper..."
+    sudo pacman -S waypaper
+    echo "waypaper installed successfully."
+else
+    echo "waypaper is already installed."
+fi
 
