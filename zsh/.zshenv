@@ -27,7 +27,7 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export BROWSER="firefox"
 
 # Command Line Browser
-export BROWSERCLI="w3m"
+export BROWSERCLI="links"
 
 # PATHS
 export PATH=$PATH:/home/kopachke/.spicetify

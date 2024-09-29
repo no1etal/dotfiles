@@ -1,7 +1,35 @@
-###fzf commands for HISTORY(F), KILL(Q) and CD(E) (source https://www.youtube.com/watch?v=hO8vd1y0h6g&list=PLqv94xWU9zZ2fMsMMDF4PjtNHCeBFbggD)
+### FZF Commands for HISTORY (Ctrl+F), KILL (Ctrl+Q), CD (Ctrl+E), and BAT preview (Ctrl+B)
+# Source: https://www.youtube.com/watch?v=hO8vd1y0h6g&list=PLqv94xWU9zZ2fMsMMDF4PjtNHCeBFbggD
 
-fzf_history() { zle -I; eval $(history | fzf +s | sed 's/ *[0-9]* *//') ; }; zle -N fzf_history; bindkey '^F' fzf_history
+# FZF for History Search (Ctrl+F)
+fzf_history() {
+    zle -I  # Clear the ZLE buffer
+    eval $(history | fzf +s | sed 's/ *[0-9]* *//')  # Select and execute a command from history
+}
+zle -N fzf_history
+bindkey '^F' fzf_history  # Bind Ctrl+F to fzf_history
 
-fzf_killps() { zle -I; ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9} ; }; zle -N fzf_killps; bindkey '^Q' fzf_killps
+# FZF for Killing Processes (Ctrl+Q)
+fzf_killps() {
+    zle -I  # Clear the ZLE buffer
+    ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9}  # Select and kill process(es)
+}
+zle -N fzf_killps
+bindkey '^Q' fzf_killps  # Bind Ctrl+Q to fzf_killps
 
-fzf_cd() { zle -I; DIR=$(find ${1:-*} -path '*/\.*' -prune -o -type d -print 2> /dev/null | fzf) && cd "$DIR" ; }; zle -N fzf_cd; bindkey '^E' fzf_cd
+# FZF for Changing Directories (Ctrl+E)
+fzf_cd() {
+    zle -I  # Clear the ZLE buffer
+    DIR=$(find ${1:-*} -path '*/\.*' -prune -o -type d -print 2> /dev/null | fzf) && cd "$DIR"  # Find and cd to directory
+}
+zle -N fzf_cd
+bindkey '^E' fzf_cd  # Bind Ctrl+E to fzf_cd
+
+# FZF with BAT Preview (Ctrl+B)
+fzf_bat_preview() {
+    zle -I  # Clear the ZLE buffer
+    find . -maxdepth 4 -type f 2> /dev/null | fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"  # Preview files with bat
+}
+zle -N fzf_bat_preview
+bindkey '^B' fzf_bat_preview  # Bind Ctrl+B to fzf_bat_preview
+
