@@ -38,10 +38,17 @@ source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 fi
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-if [ "$(tty)" = "/dev/tty1" ];
-then
-pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
+
+
+#if [ "$(tty)" = "/dev/tty1" ];
+#then
+#pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
+#fi
+
+if [ "$(tty)" = "/dev/tty1" ]; then
+    pgrep Hyprland || exec Hyprland
 fi
+
 
 #plug "zsh-users/zsh-autosuggestions"
 setopt autocd extendedglob nomatch menucomplete
