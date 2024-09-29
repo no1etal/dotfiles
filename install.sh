@@ -13,15 +13,13 @@ fi
 # nvim #
 ########
 
-# Uncommented because I am using custom community vim config
-
-#mkdir -p "$XDG_CONFIG_HOME/nvim"
+mkdir -p "$XDG_CONFIG_HOME/nvim"
 mkdir -p "$XDG_CONFIG_HOME/nvim/undo"
 
 ln -sf "$DOTFILES/nvim/init.vim" "$XDG_CONFIG_HOME/nvim"
 
-rm -rf "$XDG_CONFIG_HOME/X11"
-ln -s "$DOTFILES/X11" "$XDG_CONFIG_HOME"
+#rm -rf "$XDG_CONFIG_HOME/X11"
+#ln -s "$DOTFILES/X11" "$XDG_CONFIG_HOME"
 
 # install neovim plugin manager
 [ ! -f "$DOTFILES/nvim/autoload/plug.vim" ] \
@@ -74,12 +72,19 @@ ln -sf "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
 
 [ ! -d ~/.config/tmux/plugins ] && git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
+# install neovim plugin manager
+[ ! -f "$DOTFILES/nvim/autoload/plug.vim" ] \
+    && curl -fLo "$DOTFILES/nvim/autoload/plug.vim" --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+mkdir -p "$XDG_CONFIG_HOME/nvim/autoload"
+ln -sf "$DOTFILES/nvim/autoload/plug.vim" "$XDG_CONFIG_HOME/nvim/autoload/plug.vim"
 
 ########
 #  X  ##      Base from https://github.com/ChristianChiarulli/Machfiles/blob/master/x/.xprofile
 ########
 
-ln -sf "$DOTFILES/X11/.xprofile" "$HOME"
+#ln -sf "$DOTFILES/X11/.xprofile" "$HOME"
 
 ##########
 # Ranger #
@@ -216,11 +221,7 @@ ln -s "$DOTFILES/qutebrowser" "$XDG_CONFIG_HOME"
 ###################
 
 rm -rf "XDG_CONFIG_HOME/newsboat"
-<<<<<<< HEAD
 ln -s "$DOTFILES/newsboat/" "$XDG_CONFIG_HOME"
-=======
-ln -s "$DOTFILES/newsboat" "$XDG_CONFIG_HOME/newsboat"
->>>>>>> 7a7113b46569dcbe8d45600d328d238ff8537d09
 
 ###################
 ### newsraft ######
@@ -235,3 +236,5 @@ ln -s "$DOTFILES/newsraft" "$XDG_CONFIG_HOME"
 
 rm -rf "XDG_CONFIG_HOME/starship.toml"
 ln -s "$DOTFILES/starship.toml" "$XDG_CONFIG_HOME"
+
+
